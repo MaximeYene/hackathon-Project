@@ -1,13 +1,19 @@
 *{
     font-family: sans-serif;
+    margin: auto;
+    padding: auto;
 }
 :root{
     --blue-fist-color: rgb(20,24,73);
     --blue-second-color: rgb(44,150,237);
 }
+body{
+    overflow-x: hidden;
+}
 .navbar {
     width: 100%;
     position: fixed;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     border: 1px solid red;
@@ -61,28 +67,27 @@
 .header-presentation-firstPart{
     margin-bottom: 2%;
 }
-.header-searchbar{
-    width: 100%;
+.header-searchbar {
     border: 1px solid red;
     display: flex;
     justify-content: center;
-    margin-top: 6%;
+    align-items: center;
+    border-radius: 50px;
+    margin: 6% 20%;
+    background-color: #fff;
 }
 .header-searchbar input {
     font-size: 18px;
     padding: 4% 20px;
     background-color: transparent;
-    color: #fff;
+    border: none;
 }
 .header-searchbar-adresse input {
     padding: 6.3% 0;
     padding-left: 15px;
-    border-top-left-radius: 50px;
-    color: #fff;
 }
 .header-searchbar-destination input {
     padding: 6.8% 0;
-    color: #fff;
 }
 .header-searchbar-submit input {
     padding: 20% 15%;
@@ -91,3 +96,91 @@
 .header-searchbar-date input {
     padding: 9.4% 0;
 }
+.feat{
+    margin-top: 10%;
+}
+.feat-title{
+    text-align: center;
+    font-size: 35px;
+}
+.feat-s-title{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 3%;
+}
+.feat-container{
+    display: flex;
+    margin: 5% 3%;
+}
+.feat-container-trajet{
+    border: 1px solid;
+    margin: 2%;
+    padding: 1%;
+}
+.feat-container-trajet-img {
+    text-align: center;
+}
+.feat-container-reservation{
+    border: 1px solid;
+    margin: 2%;
+    padding: 1%;
+}
+.feat-container-reservation-img {
+    text-align: center;
+}
+.feat-container-services{
+    border: 1px solid;
+    margin: 2%;
+    padding: 1%;
+}
+.feat-container-services-img {
+    text-align: center;
+}
+.feat-container-reservation-title, .feat-container-trajet-title, .feat-container-services-title{
+    margin: 10% 0;
+    text-align: center;
+    font-size: 25px;
+}
+.inscription{
+    display: flex;
+}
+.inscription-part1{
+    width: 50%;
+    height: auto;
+    border: 1px solid;
+}
+.inscription-part2{
+    width: 50%;
+    height: auto;
+    border: 1px solid;
+}
+.inscription-part1-title, .inscription-part2-title{
+    position: relative;
+    width: 100%;
+    top: 80px;
+    text-align: center;
+}
+.inscription-part1-title a, .inscription-part2-title a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+}
+.inscription-part1-lorem, .inscription-part2-lorem {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    bottom: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.inscription-part1-img img{
+    width: 100%;
+    height: auto;
+}
+.inscription-part2-img img{
+    width: 100%;
+    height: auto;
+}
+
