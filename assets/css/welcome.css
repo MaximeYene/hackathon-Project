@@ -1,7 +1,5 @@
 *{
     font-family: sans-serif;
-    margin: auto;
-    padding: auto;
 }
 :root{
     --blue-fist-color: rgb(20,24,73);
@@ -9,6 +7,7 @@
 }
 body{
     overflow-x: hidden;
+    margin: auto;
 }
 .navbar {
     width: 100%;
@@ -183,4 +182,38 @@ body{
     width: 100%;
     height: auto;
 }
-
+.contactUs {
+    display: flex;
+    justify-content: space-around;
+    margin: 5% 3%;
+    padding: 1%;
+}
+.contactUs-presentation-firstPart{
+    margin-bottom: 3%;
+    font-size: 25px;
+}
+.contactUs-presentation-secondPartPart{
+    font-size: 18px;
+}
+.contactUs-contact a{
+    text-decoration: none;
+    font-size: 25px;
+}
+.contactUs-contact svg {
+    position: relative;
+    top: 5px;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    margin: 5% 3%;
+    border: 1px solid;
+}
+.footer-part1{
+    display: inline-grid;
+}
+.footer-footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 3%;
+}
