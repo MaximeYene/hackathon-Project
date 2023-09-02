@@ -14,25 +14,31 @@ body{
     align-items: center;
     padding: 2% 0;
 }
+.navbar-part1{
+    width: 20%;
+}
 .navbar a{
     text-decoration: none;
     color: #fff;
 }
 .navbar-logo {
-    width: 15%;
+    width: 15%36;
     margin-left: 5%;
     text-align: center;
 }
 .navbar-logo a{
     font-size: 25px;
 }
+.navbar-part2{
+    display: flex;
+}
 .navbar-list {
     width: 40%;
-    text-align: center;
+    text-align: right;
 }
 .navbar-list a {
     margin: 0 3%;
-    font-size: 18px;
+    font-size: 13px;
     transition: 1s;
 }
 .navbar-list a:hover{
@@ -52,7 +58,7 @@ body{
     transform: scale(1.03);
 }
 .navbar-contact a{
-    font-size: 20px;
+    font-size: 13px;
 }
 .header{
     width: 100%;
@@ -62,7 +68,7 @@ body{
 }
 .header-presentation {
     width: 100%;
-    margin-top: 15%;
+    margin-top: 10%;
     text-align: center;
     font-size: 50px;
     color: #fff;
@@ -71,8 +77,10 @@ body{
 .header-presentation-firstPart{
     margin-bottom: 2%;
 }
+.header-presentation-secondPart{
+    font-size: 30px;
+}
 .header-searchbar {
-    border: 1px solid;
     text-align: center;
     border-radius: 30px;
     display: flex;
@@ -83,7 +91,7 @@ body{
     
 }
 .header-searchbar input{
-    width: 100%;
+    width: 96%;
     outline: none;
     border: none;
     text-align: center;
@@ -108,9 +116,9 @@ body{
     margin-top: 10%;
 }
 .feat-title {
-    margin: 0 37%;
+    margin: 0 35%;
     text-align: center;
-    font-size: 35px;
+    font-size: 34px;
     color: #566985;
     transition: .1s;
 }
@@ -119,7 +127,7 @@ body{
 }
 .feat-s-title{
     text-align: center;
-    font-size: 20px;
+    font-size: 13px;
     margin-top: 3%;
     color: #7d93b2;
 }
@@ -167,13 +175,14 @@ body{
 .feat-container-reservation-title, .feat-container-trajet-title, .feat-container-services-title{
     margin: 10% 0;
     text-align: center;
-    font-size: 25px;
+    font-size: 18px;
     color: #566985;
 }
 .feat-container-reservation-lorem, .feat-container-trajet-lorem, .feat-container-services-lorem{
-    color: #566985;
+    color: #999;
     text-align: center;
     padding: 1% 7%;
+    font-size: 13px;
 }
 .inscription{
     display: flex;
@@ -181,24 +190,27 @@ body{
 .inscription-part1{
     width: 50%;
     height: auto;
-    border: 1px solid;
 }
 .inscription-part2{
     width: 50%;
     height: auto;
-    border: 1px solid;
 }
 .inscription-part1-title, .inscription-part2-title{
     position: relative;
     width: 100%;
     top: 80px;
     text-align: center;
+    transition: .2s;
 }
 .inscription-part1-title a, .inscription-part2-title a{
     text-decoration: none;
     font-size: 30px;
     font-weight: bold;
     color: #fff;
+    border-bottom: 1px solid #fff;
+}
+.inscription-part1-title:hover, .inscription-part2-title:hover{
+    transform: scale(1.03);
 }
 .inscription-part1-lorem, .inscription-part2-lorem {
     width: 100%;
@@ -219,7 +231,7 @@ body{
 }
 .contactUs {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 10%;
     background-color: #4DB7FE;
 }
@@ -239,15 +251,19 @@ body{
 }
 .contactUs-contact {
     width: max-content;
-    padding: 11px 15px;
+    padding: 1% 3%;
     background: #fff;
     height: max-content;
     box-shadow: 0px 0px 0px 7px rgba(255,255,255,0.4);
     border-radius: 30px;
+    transition: .3s;
+}
+.contactUs-contact:hover{
+    transform: scale(1.03);
 }
 .contactUs-contact a{
     text-decoration: none;
-    font-size: 25px;
+    font-size: 18px;
 }
 .contactUs-contact svg {
     position: relative;
@@ -260,7 +276,7 @@ body{
     display: flex;
     justify-content: space-between;
     margin: 0 20%;
-    padding: 10% 0;
+    padding: 5% 0;
 }
 .footer-part1{
     display: inline-grid;
@@ -273,19 +289,24 @@ body{
     margin-bottom: 3%;
     color: #fff;
     font-weight: 700;
+    transition: .2s;
+}
+.footer-part1 a:hover{
+    color: #566985;
 }
 .footer-part2 {
     width: 20%;
-    text-align: center;
+    text-align: left;
+    font-weight: 700;
 }
 .footer-part2-localisation-title, .footer-part2-localisation-title, .footer-part2-language-title, .footer-part2-language-title{
     color: #fff;
-    font-size: 30px;
+    font-size: 18px;
     margin-bottom: 5%;
 }
-.footer-part2-localisation-spec, .footer-part2-localisation-spec, .footer-part2-language-spec, .footer-part2-language-spec{
+.footer-part2-localisation-spec, .footer-part2-localisation-spec, .footer-part2-language-spec, .footer-part2-language-spec {
     color: #fff;
-    font-size: 40px;
+    font-size: 26px;
     margin-bottom: 20%;
 }
 .footer-footer{
@@ -299,7 +320,9 @@ body{
     font-size: 20px;
 }
 
-
+@media screen and (max-width:800px) {
+    
+}
 
 
 
