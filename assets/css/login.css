@@ -18,7 +18,7 @@ body{
   width: 70%;
   height: 100%;
   margin: 0;
-  padding-top: 45px;
+  padding-top: 0px;
   
 
 }
@@ -31,6 +31,8 @@ body{
   width: 80%;
   height:auto;
   margin:0;
+  margin-top: 70px;
+  padding-top: 0;
 }
 form {
   width: 50%;
@@ -38,6 +40,7 @@ form {
   padding: 100px;
   background-color: #fff;
   border-bottom-left-radius:  10px;
+  border-top-left-radius:  10px;
 
   
 }
