@@ -72,14 +72,7 @@ width: 100%;
 .contact{
 text-align: center;
 font-size: 3.75rem;
-<<<<<<< HEAD
-margin-top: 40px;
-color: #6257e3;
-padding-top: 58px;
-=======
-color:rgb(83, 83, 206);
-font-family: cursive;
->>>>>>> develop
+
 }
 
 .formulairee{
@@ -124,16 +117,13 @@ background-color:#6257e3;
   letter-spacing: 2px;
   padding: 14px 22px;
   border-radius: 30px;
-<<<<<<< HEAD
    
-=======
   color: white;
     /* background-color: rgb(83, 83, 206);
     color: white;
     font-family: cursive;
     border-radius: 13px;
     padding: 6px; */
->>>>>>> develop
 }
 
 .message-avantageux{
@@ -145,7 +135,7 @@ margin: 34px;
     font-size: 30px;
 }
 
-<<<<<<< HEAD
+
 .lien-de-contact{
     color: white;
     font-size: 13px;
@@ -202,14 +192,14 @@ margin: 34px;
 
 
 @media screen and (max-width: 750px) {
-=======
+
 @media screen and (max-width: 400px) {
->>>>>>> develop
+
     .group-1 .layout-1{
      margin-left: 0px;
      margin-right: 0px;
     }
-<<<<<<< HEAD
+
     .formulairee{
      display: flex;
      flex-direction: column;
@@ -224,9 +214,6 @@ margin: 34px;
     .lien-de-contact{
         width: 100%;
     }
-=======
-   
->>>>>>> develop
   
 }
 
@@ -272,6 +259,7 @@ margin: 34px;
 }
 .footer-footer-reserved{
     font-size: 13px;
+}
 }
 
 
