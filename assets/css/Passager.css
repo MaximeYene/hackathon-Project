@@ -1,49 +1,60 @@
 @import url(style.css);
+
 body {
     font-family: sans-serif;
     background-color: rgb(255, 255, 255);
     margin: 0;
 }
+
 .navbar {
     width: 100%;
     height: 15px;
     z-index: 1;
     display: flex;
     justify-content: space-between;
-    background-color: var(--blue-fist-color);
+    background-color: var(--blue-first-color);
     align-items: center;
     padding: 2% 0;
 }
-.navbar-part1{
+
+.navbar-part1 {
     width: 20%;
 }
-.navbar a{
+
+.navbar a {
     text-decoration: none;
     color: #fff;
 }
+
 .navbar-logo {
     width: 15%36;
     margin-left: 5%;
     text-align: center;
 }
-.navbar-logo a{
+
+.navbar-logo a {
     font-size: 25px;
 }
-.navbar-part2{
+
+.navbar-part2 {
     display: flex;
 }
+
 .navbar-list {
     width: 40%;
     text-align: right;
 }
+
 .navbar-list a {
     margin: 0 3%;
     font-size: 13px;
     transition: 1s;
 }
-.navbar-list a:hover{
+
+.navbar-list a:hover {
     border-bottom: 1px solid #4DB7FE;
 }
+
 .navbar-contact {
     width: 15%;
     margin-right: 5%;
@@ -51,13 +62,15 @@ body {
     border-radius: 50px;
     padding: .5%;
     background-color: #6257e3;
-    box-shadow: 0px 0px 0px 7px rgba(255,255,255,0.2);
+    box-shadow: 0px 0px 0px 7px rgba(255, 255, 255, 0.2);
     transition: .2s;
 }
-.navbar-contact:hover{
+
+.navbar-contact:hover {
     transform: scale(1.03);
 }
-.navbar-contact a{
+
+.navbar-contact a {
     font-size: 13px;
 }
 
@@ -81,8 +94,9 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 50px;
-    width: 45%;
-    margin-left: 25%;
+    width: 30%;
+    margin-left: 35%;
+    border-radius: 10px;
 }
 
 .form {
@@ -95,7 +109,8 @@ h2 {
 
 input {
     border-radius: 3px;
-    padding-right: 100%;
+    padding-right: 170%;
+
     padding-top: 10px;
     padding-bottom: 10px;
     outline: none;
@@ -106,13 +121,14 @@ input {
 }
 
 input[type="time"] {
-    padding-right: 160%;
+    padding-right: 225%;
 }
 
 input[type="date"] {
-    padding-right: 136%;
+    padding-right: 195%;
 }
-input[type="date"]::-webkit-calendar-picker-indicator{
+
+input[type="date"]::-webkit-calendar-picker-indicator {
     color: #666;
 }
 
@@ -122,12 +138,13 @@ input::placeholder {
 }
 
 .btn {
-    margin-top: 20px;
-    margin-left: 29%;
+    margin-top: 50px;
+    margin-bottom: px;
     font-family: sans-serif;
     border-radius: 10px;
+    padding-left: 20px;
     border: none;
-    padding: 7px;
+    padding: 13px;
     color: rgb(255, 255, 255);
     transition: 1s;
     background-color: #2e4a96;
@@ -135,51 +152,114 @@ input::placeholder {
 }
 
 .btn:hover {
-    background-color: #ffffff;
-    color:#2e4a96;
+    padding: 15px;
     transition: 1s;
 }
-textarea{
-    width: 100%;
-    height: 100px;
-    resize: vertical;
-    outline: none;
+
+.footer{
+    background-color: #2C3B5A;
 }
-@media  (max-width:700px) {
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 0;
+}
+.footer-part1 {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #7d93b2;
+    text-align: center;
+    padding-top: 6%;
+}
+.footer-part1 a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 2% 0;
+    margin: 0 2%;
+    color: #fff;
+    font-weight: 700;
+    transition: .2s;
+}
+.footer-part1 a:hover{
+    color: #566985;
+}
+.footer-footer{
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5%;
+    padding: 1% 0;
+}
+.footer-img{
+    font-size: 20px;
+}
+.footer-footer-reserved{
+    font-size: 13px;
+}
+@media (max-width:700px) {
     input {
         padding-right: 20%;
     }
-    
+
     input[type="time"] {
-        padding-right:70%;
+        padding-right: 70%;
     }
-    
+
     input[type="date"] {
         padding-right: 100px;
     }
+
     .sub-form {
         margin-left: 5%;
     }
+
     .btn {
-        margin-left: 25%; 
+        margin-left: 25%;
     }
-    textarea{
+
+    textarea {
         width: 90%;
         height: 30px;
     }
+
     .form-container {
         width: 70%;
         margin-left: 10%;
     }
+
     h1 {
         text-align: center;
         font-size: 22px;
         margin: 20px;
     }
-    
+
     h2 {
         text-align: center;
         margin: 0;
-        font-size:15px;
+        font-size: 15px;
+    }
+    .footer-part1{
+        width: 100%;
+        flex-direction: column;
+    }
+    .footer-part1 a{
+       margin-bottom: 1%;
+    }.footer-footer{
+        flex-direction: column;
+    }
+    .footer-img{
+        margin-bottom: 15%;
+    }
+    .footer-part1 a{
+        font-size: 14px;
+    }
+    .footer-footer-part2{
+        font-size: 10px;
+    }
+    .footer-footer-reserved1{
+        margin-bottom: 2%;
     }
 }
