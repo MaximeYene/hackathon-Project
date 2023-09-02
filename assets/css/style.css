@@ -3,11 +3,13 @@
     src: url(/assets/fonts/Poppins-Regular.ttf);
 }
 :root{
-    --blue-fist-color: rgb(20,24,73);
-    --blue-second-color: rgb(44,150,237);
+    --blue-first-color:#2F3B59;
+    --blue-second-color:#4DB7FE;
     --fonts:poppins;
-    
+    --h1-font-size:25px;
+    --h2-font-size:20px;
 }
 *{
-    font-family:var(--fonts) ;
+    font-family:var(--fonts);
 }
+ 
