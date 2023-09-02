@@ -20,7 +20,7 @@
             <a href="#">Accueil</a>
             <a href="#">Infos Utiles</a>
             <a href="#">Faq</a>
-            <a href="#">Contactez nous</a>
+            <a href="contactenous.html" target="_blank">Contactez nous</a>
         </div>
         <div class="popup" onclick="togglemenu()">
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
@@ -32,7 +32,7 @@
             </svg>
         </div>
         <div class="navbar-contact">
-            <a href="#">Connexion</a>
+            <a href="inscription.html" target="_blank">Connexion</a>
         </div>
     </div>
     <div class="header">
@@ -187,15 +187,18 @@
     </div>
 </body>
 <script>
-    var menuList=document.querySelector("menuList");
+    const menuList=document.getElementById("menuList");
+    const links=document.querySelectorAll("#menuList a");
     menuList.style.maxHeight="0px";
     function togglemenu(){
         if( menuList.style.maxHeight=="0px"){
             menuList.style.maxHeight="130px";
+            menuList.style.display="grid";
         }
         else
         {
-            menuList.style.maxHeight="130px";
+            menuList.style.maxHeight="0px";
+            menuList.style.display="none";
         }
     }
 </script>
