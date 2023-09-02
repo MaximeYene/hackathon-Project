@@ -1,0 +1,90 @@
+body {
+    font-family: sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+p {
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    margin: 0;
+}
+
+.form-container {
+    background-color: rgb(245, 245, 249);
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    width: 45%;
+    margin-left: 25%;
+}
+
+.form {
+    margin-left: 5%;
+}
+
+.sub-form {
+    margin-left: 30%;
+}
+
+input {
+    border-radius: 3px;
+    padding-right: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    outline: none;
+    border-bottom: 1px solid #2e4a96;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+input[type="time"] {
+    padding-right: 160%;
+}
+
+input[type="date"] {
+    padding-right: 136%;
+}
+input[type="date"]::-webkit-calendar-picker-indicator{
+    color: #666;
+}
+
+input::placeholder {
+    font-family: cursive;
+    font-size: 17px;
+    padding-left: 5px;
+}
+
+.btn {
+    margin-top: 20px;
+    margin-left: 29%;
+    font-family: sans-serif;
+    border-radius: 10px;
+    border: none;
+    padding: 7px;
+    color: rgb(0, 0, 0);
+    transition: 1s;
+    background-color: #2e4a96;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #2e4a96;
+    color: white;
+    transition: 1s;
+}
+textarea{
+    width: 100%;
+    height: 100px;
+    resize: vertical;
+    outline: none;
+}
