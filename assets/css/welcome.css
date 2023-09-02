@@ -9,7 +9,7 @@ body{
     z-index: 1;
     display: flex;
     justify-content: space-between;
-    background-color: var(--blue-fist-color);
+    background-color: var(--blue-first-color);
     align-items: center;
     padding: 2% 0;
 }
