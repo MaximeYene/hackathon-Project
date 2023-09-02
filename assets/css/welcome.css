@@ -2,7 +2,7 @@
     font-family: sans-serif;
 }
 :root{
-    --blue-fist-color: rgb(20,24,73);
+    --blue-fist-color: #2F3B59;
     --blue-second-color: rgb(44,150,237);
 }
 body{
@@ -15,7 +15,6 @@ body{
     z-index: 1;
     display: flex;
     justify-content: space-between;
-    border: 1px solid red;
     background-color: var(--blue-fist-color);
     align-items: center;
     padding: 2% 0;
@@ -26,28 +25,39 @@ body{
 }
 .navbar-logo {
     width: 15%;
-    border: 1px solid;
+    margin-left: 5%;
     text-align: center;
 }
 .navbar-logo a{
-    font-size: 30px;
+    font-size: 25px;
 }
 .navbar-list {
-    width: 50%;
-    border: 1px solid;
+    width: 40%;
     text-align: center;
 }
 .navbar-list a {
     margin: 0 3%;
-    font-size: 20px;
+    font-size: 18px;
+    transition: 1s;
+}
+.navbar-list a:hover{
+    border-bottom: 1px solid #4DB7FE;
 }
 .navbar-contact {
-    border: 1px solid;
     width: 15%;
-    text-align: left;
+    margin-right: 5%;
+    text-align: center;
+    border-radius: 50px;
+    padding: .5%;
+    background-color: #6257e3;
+    box-shadow: 0px 0px 0px 7px rgba(255,255,255,0.2);
+    transition: .2s;
+}
+.navbar-contact:hover{
+    transform: scale(1.03);
 }
 .navbar-contact a{
-    font-size: 25px;
+    font-size: 20px;
 }
 .header{
     width: 100%;
@@ -67,13 +77,12 @@ body{
     margin-bottom: 2%;
 }
 .header-searchbar {
-    border: 1px solid red;
+     background: #fff;
+    border-radius: 30px;
+    margin: 6% 23%;
+    box-shadow: 0px 0px 0px 10px rgba(255, 255, 255, 0.3);
     display: flex;
-    justify-content: center;
     align-items: center;
-    border-radius: 50px;
-    margin: 6% 20%;
-    background-color: #fff;
 }
 .header-searchbar input {
     font-size: 18px;
@@ -84,53 +93,89 @@ body{
 .header-searchbar-adresse input {
     padding: 6.3% 0;
     padding-left: 15px;
+    outline: none;
 }
 .header-searchbar-destination input {
     padding: 6.8% 0;
+    outline: none;
 }
-.header-searchbar-submit input {
-    padding: 20% 15%;
-    padding-right: 15px;
+.header-searchbar-submit {
+    width: 100%;
+    background-color: #4DB7FE;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    text-align: center;
+    transition: .2s;
+}
+.header-searchbar-submit:hover{
+    transform: scale(1.03);
+}
+.header-searchbar-submit button {
+    padding: 18%;
+    background-color: transparent;
+    border: none;
+    color: #fff;
 }
 .header-searchbar-date input {
     padding: 9.4% 0;
+    outline: none;
 }
 .feat{
     margin-top: 10%;
 }
-.feat-title{
+.feat-title {
+    margin: 0 37%;
     text-align: center;
     font-size: 35px;
+    color: #566985;
+    transition: .1s;
+}
+.feat-title:hover{
+    border-bottom: 2px solid #4DB7FE;
 }
 .feat-s-title{
     text-align: center;
     font-size: 20px;
     margin-top: 3%;
+    color: #7d93b2;
 }
 .feat-container{
     display: flex;
     margin: 5% 3%;
+    font-size: 18px-;
 }
 .feat-container-trajet{
-    border: 1px solid;
+    border: 1px solid #eee;
     margin: 2%;
     padding: 1%;
+    transition: .2s;
+}
+.feat-container-trajet:hover{
+    transform: scale(1.03);
 }
 .feat-container-trajet-img {
     text-align: center;
 }
 .feat-container-reservation{
-    border: 1px solid;
+    border: 1px solid #eee;
     margin: 2%;
     padding: 1%;
+    transition: .2s;
+}
+.feat-container-reservation:hover{
+    transform: scale(1.03);
 }
 .feat-container-reservation-img {
     text-align: center;
 }
 .feat-container-services{
-    border: 1px solid;
+    border: 1px solid #eee;
     margin: 2%;
     padding: 1%;
+    transition: .2s;
+}
+.feat-container-services:hover{
+    transform: scale(1.03);
 }
 .feat-container-services-img {
     text-align: center;
@@ -139,6 +184,12 @@ body{
     margin: 10% 0;
     text-align: center;
     font-size: 25px;
+    color: #566985;
+}
+.feat-container-reservation-lorem, .feat-container-trajet-lorem, .feat-container-services-lorem{
+    color: #566985;
+    text-align: center;
+    padding: 1% 7%;
 }
 .inscription{
     display: flex;
@@ -184,16 +235,31 @@ body{
 }
 .contactUs {
     display: flex;
-    justify-content: space-around;
-    margin: 5% 3%;
-    padding: 1%;
+    justify-content: space-between;
+    padding: 10%;
+    background-color: #4DB7FE;
 }
 .contactUs-presentation-firstPart{
-    margin-bottom: 3%;
-    font-size: 25px;
+    float: left;
+    width: 100%;
+    text-align: left;
+    font-size: 34px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    color: #fff;
 }
-.contactUs-presentation-secondPartPart{
-    font-size: 18px;
+.contactUs-presentation-secondPart{
+    text-align: left;
+    color: rgba(255,255,255,0.51);
+    font-size: 13px;
+}
+.contactUs-contact {
+    width: max-content;
+    padding: 11px 15px;
+    background: #fff;
+    height: max-content;
+    box-shadow: 0px 0px 0px 7px rgba(255,255,255,0.4);
+    border-radius: 30px;
 }
 .contactUs-contact a{
     text-decoration: none;
@@ -203,17 +269,65 @@ body{
     position: relative;
     top: 5px;
 }
+.footer{
+    background-color: #2C3B5A;
+}
 .footer-container{
     display: flex;
-    justify-content: space-around;
-    margin: 5% 3%;
-    border: 1px solid;
+    justify-content: space-between;
+    margin: 0 5%;
+    padding: 10% 0;
 }
 .footer-part1{
     display: inline-grid;
+    width: 50%;
+    border-right: 1px solid #7d93b2;
+}
+.footer-part1 a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-bottom: 8%;
+    color: #fff;
+    font-weight: 700;
+}
+.footer-part2 {
+    width: 20%;
+    text-align: center;
+}
+.footer-part2-localisation-title, .footer-part2-localisation-title, .footer-part2-language-title, .footer-part2-language-title{
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 5%;
+}
+.footer-part2-localisation-spec, .footer-part2-localisation-spec, .footer-part2-language-spec, .footer-part2-language-spec{
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 20%;
 }
 .footer-footer{
     display: flex;
+    color: #fff;
     justify-content: space-between;
-    margin: 0 3%;
+    margin: 0 5%;
+    padding: 2% 0;
+}
+.footer-img{
+    font-size: 20px;
+}
+
+
+
+
+@media screen and (max-width:1150px){
+    .navbar{
+        position: static;
+    }    
+}
+
+
+
+@media screen and (max-width:900px) {
+    .navbar{
+        position: static;
+    }
 }
