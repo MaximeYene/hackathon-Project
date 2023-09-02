@@ -32,7 +32,6 @@ margin-top: -6px;
     align-items: center;
 }
 
-
 .group-1 input{
     padding: 12px 60px;
     margin-right: -5px;
@@ -122,3 +121,32 @@ margin: 34px;
     margin-left: 32px;
     font-size: 30px;
 }
+
+
+
+
+@media screen and (max-width: 400px) {
+    .group-1 .layout-1{
+     margin-left: 0px;
+     margin-right: 0px;
+    }
+    .formulairee{
+     display: flex;
+     flex-direction: column;
+     margin-left: ;
+    }
+    .layout-1 .contact{
+        font-size: 24px;
+    }
+    .premierimage img {
+        width: 100%;
+    }
+    .formulairee .group-4{
+
+    }
+}
+
+ 
+
+ 
+ 
