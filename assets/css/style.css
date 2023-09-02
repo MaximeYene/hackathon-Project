@@ -1,0 +1,14 @@
+
+@font-face {
+    font-family:poppins ;
+    src: url(/assets/fonts/Poppins-Regular.ttf);
+}
+:root{
+    --blue-fist-color: rgb(20,24,73);
+    --blue-second-color: rgb(44,150,237);
+    --fonts:poppins;
+    
+}
+*{
+    font-family:var(--fonts) ;
+}
