@@ -1,5 +1,6 @@
 body{
-
+    background-color: gainsboro;
+;
 }
 .navbar {
     width: 100%;
@@ -70,9 +71,9 @@ width: 100%;
 .contact{
 text-align: center;
 font-size: 3.75rem;
-color:rgb(83, 83, 206);
-font-family: cursive;
-margin-top: -6px;
+margin-top: 40px;
+color: #6257e3;
+padding-top: 58px;
 }
 
 .formulairee{
@@ -81,7 +82,6 @@ margin-top: -6px;
 }
 
 .layout-1{
-    background-color: white;
     margin-left: 300px;
     margin-right: 300px;
     margin-bottom: 50px;
@@ -90,6 +90,10 @@ margin-top: -6px;
 
 .form-1{
     align-items: center;
+}
+.group-1{
+    display: grid;
+    align-content: center;
 }
 
 .group-1 input{
@@ -102,21 +106,16 @@ margin-top: -6px;
 .group-4 textarea{
     /* background-color: #e5e5e5; */
     margin-top: 10px;
-    width: 100%;
 }
 .group-5 button{
-background-color:rgb(83, 83, 206);
+background-color:#6257e3;
   border-style: none;
   font-size: 0.875rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   padding: 14px 22px;
   border-radius: 30px;
-    /* background-color: rgb(83, 83, 206);
-    color: white;
-    font-family: cursive;
-    border-radius: 13px;
-    padding: 6px; */
+   
 }
 
 .message-avantageux{
@@ -129,7 +128,6 @@ margin: 34px;
 }
 
 .lien-de-contact{
-    background-color: #333333;
     color: white;
     font-size: 13px;
 }
@@ -137,7 +135,6 @@ margin: 34px;
 .service {
     display: flex;
     justify-content: space-evenly;
-    margin: 50px;
     margin-top: 10px;
 }
 
@@ -159,7 +156,7 @@ margin: 34px;
     text-align: center;
 }
 
-
+/* 
 .icone-dereseau{
     display: flex;
 }
@@ -180,12 +177,12 @@ margin: 34px;
     justify-content: center;
     margin-left: 32px;
     font-size: 30px;
-}
+} */
 
 
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 750px) {
     .group-1 .layout-1{
      margin-left: 0px;
      margin-right: 0px;
@@ -193,11 +190,15 @@ margin: 34px;
     .formulairee{
      display: flex;
      flex-direction: column;
+
     }
     .layout-1 .contact{
         font-size: 24px;
     }
     .premierimage img {
+        width: 100%;
+    }
+    .lien-de-contact{
         width: 100%;
     }
   
