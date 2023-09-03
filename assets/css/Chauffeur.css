@@ -209,6 +209,10 @@ textarea {
 
 
 @media (max-width:700px) {
+    html, body{
+        overflow-x: hidden;
+    }
+
     input {
         padding-right: 20%;
     }
@@ -219,6 +223,10 @@ textarea {
 
     input[type="date"] {
         padding-right: 100px;
+    }
+
+    input {
+        padding-right: 70px; 
     }
 
     .sub-form {
