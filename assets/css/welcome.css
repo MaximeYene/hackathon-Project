@@ -5,14 +5,14 @@ body{
 }
 .navbar {
     width: 100%;
-    height: 15px;
+    height: auto;
     position: fixed;
     z-index: 1;
     display: flex;
     justify-content: space-between;
     background-color: var(--blue-first-color);
     align-items: center;
-    padding: 2% 0;
+    padding: 1.3% 0;
 }
 .navbar-part1{
     width: 20%;
@@ -29,16 +29,14 @@ body{
     font-size: 25px;
 }
 .navbar-part2{
+    width: 80%;
     display: flex;
+    justify-content: space-between;
 }
 .navbar-list {
-    width: 53%;
-    border: 1px solid;
-    display: inline-flex;
+    width: 75%;
+    display: inline-block;
     text-align: center;
-    margin-left: 12%;
-    position: relative;
-    bottom: 10px;
 }
 .navbar-list a {
     margin: 0 5%;
@@ -47,25 +45,16 @@ body{
 }
 .navbar-list a:hover{
     border-bottom: 1px solid #4DB7FE;
-} 
-.popup svg {
-    display: none;
 }
-.navbar-contact {
-    width: 15%;
-    margin-right: 5%;
-    text-align: center;
-    border-radius: 50px;
-    padding: .5%;
-    background-color: #6257e3;
-    box-shadow: 0px 0px 0px 7px rgba(255,255,255,0.2);
-    transition: .2s;
+.navbar-contact{
+    margin-right: 13%;
 }
-.navbar-contact:hover{
-    transform: scale(1.03);
-}
-.navbar-contact a{
+.navbar-contact a {
     font-size: 13px;
+    border-radius: 30px;
+    background-color: #4DB7FE;
+    padding: 14% 57%;
+    box-shadow: 0px 0px 0px 6px rgba(255, 255, 255, 0.3);
 }
 .header{
     width: 100%;
@@ -353,37 +342,39 @@ body{
     }
     .navbar{
         position: static;
+        flex-direction: column;
+        padding: 0;
     }
-    .navbar-logo {
-        margin-left: 40%;
-        text-align: center;
+    .navbar-part1{
+        width: 100%;
+        margin-bottom: 2%;
+    }
+    .navbar-part2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
     }
     .navbar-list {
-        position: absolute;
-        background-color: #7d93b2;
-        display: grid;
-        border-radius: 10px;
-        top: 15%;
+        width: 75%;
+        display: inline-block;
+        text-align: center;
+        margin-left: 0;
     }
-    .navbar-list a{
-        border: none;
-        margin-bottom: 4%;
+    .navbar-logo {
+        text-align: center;
     }
-    .popup {
-        position: absolute;
-        bottom: 8px;
+    .navbar-contact a {
+        font-size: 10px;
+        padding: 2% 42%;
+        box-shadow: 0px 0px 0px 6px rgba(255, 255, 255, 0.3);
     }
-    .popup svg {
-        display: block;
-        background-color: #4DB7FE;
-        border-radius: 7px;
-    } 
     .header-presentation{
-        font-size: 30px;
+        font-size: 16px;
         margin-bottom: 8%;
     }
     .header-presentation-secondPart{
-        font-size: 20px;
+        font-size: 14px;
     }
     .header-searchbar {
         flex-direction: column;
@@ -421,7 +412,7 @@ body{
     }
     .feat-title {
         margin: 0;
-        font-size: 30px;
+        font-size: 20px;
     }
     .feat-s-title {
         margin-bottom: 5%;
@@ -438,12 +429,12 @@ body{
         top: 70px;
     }
     .inscription-part1-title a, .inscription-part2-title a{
-        font-size: 18px;
+        font-size: 12px;
         color: #566985;
         border-bottom: 1px solid #566985;
     }
     .inscription-part1-lorem, .inscription-part2-lorem{
-        font-size: 11px;
+        font-size: 10px;
         color: #566985;
     }   
     .inscription-part1-img img, .inscription-part2-img img{
@@ -464,6 +455,7 @@ body{
     }
     .contactUs-contact{
         margin: auto;
+        padding-bottom: 2%;
     }
     .footer-part1{
         width: 100%;
@@ -475,14 +467,19 @@ body{
         flex-direction: column;
     }
     .footer-img{
-        margin-bottom: 15%;
+        margin-bottom: 2%;
     }
     .footer-part1 a{
         font-size: 14px;
     }
-    .footer-footer-part2{
+    .footer-footer-part1 {
+        width: 100%;
+        text-align: center;
+    }
+    .footer-footer-part2 {
         font-size: 10px;
         width: 96%;
+        flex-direction: column;
     }
     .footer-footer-reserved1{
         margin-bottom: 2%;
@@ -490,6 +487,23 @@ body{
 }
 
 
-
+@media screen and (max-width:480px){
+    .navbar-part2{
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-list {
+        width: 100%;
+        display: inline;
+        text-align: center;
+        margin-left: 0;
+    }
+    .navbar-contact {
+        margin-left: 39%;
+        margin-top: 4%;
+        width: max-content;
+        margin-bottom: 4%;
+    }
+}
 
 
