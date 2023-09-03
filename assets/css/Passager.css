@@ -249,26 +249,35 @@ input::placeholder {
         font-size: 15px;
     }
 
-    .navbar {
+    .navbar{
         position: static;
+        flex-wrap: wrap;
+        padding: 0;
     }
-
+    .navbar-part1{
+        width: 100%;
+        margin-bottom: 2%;
+    }
+    .navbar-part2 {
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px;
+    }
+    .navbar-list {
+        width: 75%;
+        display: inline-block;
+        text-align: center;
+        margin-left: 0;
+    }
     .navbar-logo {
-        margin-left: 40%;
         text-align: center;
     }
-
-    .navbar-list {
-        position: absolute;
-        background-color: #7d93b2;
-        display: grid;
-        border-radius: 10px;
-        top: 15%;
-    }
-
-    .navbar-list a {
-        border: none;
-        margin-bottom: 4%;
+    .navbar-contact a {
+        font-size: 10px;
+        padding: 2% 42%;
+        box-shadow: 0px 0px 0px 6px rgba(255, 255, 255, 0.3);
     }
 
     .footer-part1 {
