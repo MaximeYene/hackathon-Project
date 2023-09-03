@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/welcome.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/inscription.css">
     <script src="assets/js/script.js"></script>
     <title>PROJET-COVOITURAGE</title>
 </head>
@@ -14,11 +16,20 @@
         <div class="navbar-logo">
             <a href="#">Uni-Cars</a>
         </div>
-        <div class="navbar-list">
+        <div class="navbar-list" id="menuList">
             <a href="#">Accueil</a>
             <a href="#">Infos Utiles</a>
             <a href="#">Faq</a>
             <a href="#">Contactez nous</a>
+        </div>
+        <div class="popup" onclick="togglemenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                <g id="feBar0" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+                    <g id="feBar1" fill="white">
+                        <path id="feBar2" d="M3 16h18v2H3v-2Zm0-5h18v2H3v-2Zm0-5h18v2H3V6Z" />
+                    </g>
+                </g>
+            </svg>
         </div>
         <div class="navbar-contact">
             <a href="#">Connexion</a>
@@ -59,9 +70,9 @@
         <div class="feat-container">
             <div class="feat-container-trajet">
                 <div class="feat-container-trajet-img">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 24 24">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 32 32">
                         <path fill="currentColor"
-                            d="M4 6.143v12.824l5.065-2.17l6 3L20 17.68V4.857l1.303-.558a.5.5 0 0 1 .697.46V19l-7 3l-6-3l-6.303 2.701a.5.5 0 0 1-.697-.46V7l2-.857Zm12.243 5.1L12 15.485l-4.243-4.242a6 6 0 1 1 8.486 0ZM12 12.657l2.828-2.829a4 4 0 1 0-5.656 0L12 12.657Z" />
+                            d="m29.338 19.934l-7.732-2.779l-3.232-4.058A2.99 2.99 0 0 0 16.054 12H8.058a2.998 2.998 0 0 0-2.48 1.312l-2.712 3.983A4.988 4.988 0 0 0 2 20.107V26a1 1 0 0 0 1 1h2.142a3.98 3.98 0 0 0 7.716 0h6.284a3.98 3.98 0 0 0 7.716 0H29a1 1 0 0 0 1-1v-5.125a1 1 0 0 0-.662-.941zM9 28a2 2 0 1 1 2-2a2.003 2.003 0 0 1-2 2zm14 0a2 2 0 1 1 2-2a2.002 2.002 0 0 1-2 2zm5-3h-1.142a3.98 3.98 0 0 0-7.716 0h-6.284a3.98 3.98 0 0 0-7.716 0H4v-4.893a2.998 2.998 0 0 1 .52-1.688l2.711-3.981A1 1 0 0 1 8.058 14h7.996a.993.993 0 0 1 .764.354l3.4 4.269a1 1 0 0 0 .444.318L28 21.578zm0-23h-4a2.002 2.002 0 0 0-2 2v8a2.002 2.002 0 0 0 2 2h4a2.002 2.002 0 0 0 2-2V4a2.002 2.002 0 0 0-2-2zm0 2v2h-4V4zm-4 8V8h4v4z" />
                     </svg>
                 </div>
                 <div class="feat-container-trajet-title">
@@ -75,7 +86,7 @@
             </div>
             <div class="feat-container-reservation">
                 <div class="feat-container-reservation-img">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 2048 2048">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 2048 2048">
                         <path fill="currentColor"
                             d="M896 512v128H512V512h384zM512 896V768h384v128H512zm0 256v-128h256v128H512zM384 512v128H256V512h128zm0 256v128H256V768h128zm-128 384v-128h128v128H256zM128 128v1792h640v128H0V0h1115l549 549v219h-128V640h-512V128H128zm1024 91v293h293l-293-293zm640 805h256v1024H896V1024h256V896h128v128h384V896h128v128zm128 896v-512h-896v512h896zm0-640v-128h-896v128h896z" />
                     </svg>
@@ -91,7 +102,7 @@
             </div>
             <div class="feat-container-services">
                 <div class="feat-container-services-img">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 64 64">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
                         <path fill="currentColor"
                             d="M54.866 39.484h.01c-.145-3.37-.726-14.861-2.125-21.197c-.404-1.837-2.112-3.952-4.275-6.631c-1.738-2.154-3.708-4.597-5.178-7.188c-1.176-2.07-2.91-2.911-4.635-2.244c-1.928.743-3.492 3.337-3.613 6.868c-1.963-2.18-3.245-2.227-4.596-1.347c-1.91 1.242-2.753 4.988-.857 9.107c.9 1.956 2.327 3.093 3.584 4.095c.945.753 1.76 1.403 2.137 2.227l.359.824c-.92-.448-1.779-.855-2.545-1.218c-1.861-.881-3.219-1.272-4.407-1.272c-1.608 0-2.77.707-4.24 1.604c-1.846 1.123-4.372 2.66-9.434 3.938c-1.505.379-2.557 1.132-3.039 2.178c-.482 1.045-.37 2.29.333 3.703l.019.037c-4.484 1.111-2.452 6.611-3.194 11.97c-.195 1.405-.412 2.504.527 3.973C15.567 58.086 22.668 62 33.44 62c4.305 0 7.343-.104 10.242-1.486c3.62-1.724 10.213-10.454 11.193-17.545c.174-1.247.163-2.41-.009-3.485M38.036 5.415c.824-2.396 2.95-2.178 3.826-.584c1.513 2.754 3.559 5.505 5.346 7.719c1.839 2.276 3.697 4.588 4.002 5.967c.97 4.393 1.42 12.34 1.72 17.219c-1.907-2.5-5.293-4.846-7.585-6.338c-.313-1.932-.913-5.3-1.933-9.8c-.679-3.011-4.3-4.765-5.263-8.967c-.444-1.948-.606-3.782-.113-5.216m-6.718 9.542c-.522-1.056-1.108-5.043.372-6.146c1.377-1.027 2.48.978 3.459 2.563c.459 2.916 2.217 5.51 3.454 6.99c.964 1.153 1.796 2.147 2.037 3.301c.299 1.426.707 3.765.996 5.468a88.97 88.97 0 0 0-2.675-1.469a100.243 100.243 0 0 0-2.58-5.646c-.902-1.839-3.793-2.497-5.063-5.061M42.184 57.56c-2.579 1.232-5.243 1.341-9.441 1.341c-9.549 0-19.031-4.753-22.003-11.438c-.505-1.134-.019-2.744-.019-4.885c0-5.124.125-8.155 2.72-8.155c1.246 0 5.18 3 5.18 10.614l9.46 4.271c2.76-2.83 10.607-7.285 10.607-7.285c-1.234-1.569-.567-6.044-.567-6.044c-2.587-.333-8.089-2.94-9.985-6.587c-2.421 2.087-13.666 5.972-14.392 1.063c-.215-1.453 1.09-1.965 1.604-2.094c5.355-1.352 7.943-2.908 9.786-4.03c1.343-.819 2.612-1.5 3.658-1.5c.877 0 2.235.439 3.814 1.188c4.487 2.122 11.959 5.462 18.604 11.28c.619.543 1.406 1.734 1.657 2.5c2.265 6.925-7.102 18.047-10.683 19.761m-5.638-15.45c-1.803.953-6.012 3.288-8.536 5.579l-7-4.512c0-3.818-.829-6.58-2.039-8.367c3.063-.197 6.852-.999 8.775-2.028c1.358 1.416 4.813 4.635 8.59 5.146c-.142 1.109-.235 2.797.21 4.182" />
                     </svg>
@@ -114,7 +125,7 @@
                 <a href="#">Conduisez avec Uni-Cars</a>
             </div>
             <div class="inscription-part1-img">
-                <img src="assets/image/istockphoto-946490806-1024x1024.jpg" alt="image d illustration">
+                <img src="assets/image/pexels-photo-3787149-640w.webp" alt="image d illustration">
             </div>
             <div class="inscription-part1-lorem">
                 Gagnez de l argent en effectuant des courses
@@ -125,7 +136,7 @@
                 <a href="#"> Trouvez un itineraire pour voyager</a>
             </div>
             <div class="inscription-part2-img">
-                <img src="assets/image/istockphoto-946490806-1024x1024.jpg" alt="image d illustration">
+                <img src="assets/image/2ec7d0c6aa8f91e4074086b3e20534a7_XL.jpg" alt="image d illustration">
             </div>
             <div class="inscription-part2-lorem">
                 Vous apprecierez la simplicite du processus de covoiturage.
@@ -157,37 +168,35 @@
                 <a href="#">Conducteur</a>
                 <a href="#">Besoin d assistance</a>
             </div>
-            <div class="footer-part2">
-                <div class="footer-part2-localisation">
-                    <div class="footer-part2-localisation-title">
-                        Lieu
-                    </div>
-                    <div class="footer-part2-localisation-spec">
-                        Cameroun
-                    </div>
-                </div>
-                <div class="footer-part2-language">
-                    <div class="footer-part2-language-title">
-                        Langue
-                    </div>
-                    <div class="footer-part2-language-spec">
-                        Francais
-                    </div>
-                </div>
-            </div>
         </div>
         <div class="footer-footer">
-            <div class="footer-img">
-                Uni-Cars
+            <div class="footer-footer-part1">
+                <div class="footer-img">
+                    Uni-Cars
+                </div>
             </div>
-           <div>
-            Uni-Cars est un service intermédiaire. Les services de transport sont fournis par des tiers.
-           </div>
-           <div>
-            © Uni-Cars 2023 . All rights reserved.
-           </div>
+            <div class="footer-footer-part2">
+                <div class="footer-footer-reserved1">
+                    Uni-Cars est un service intermédiaire. Les services de transport sont fournis par des tiers.
+                </div>
+                <div class="footer-footer-reserved2">
+                    © Uni-Cars 2023 . All rights reserved.
+                </div>
+            </div>
         </div>
     </div>
 </body>
-
+<script>
+    var menuList=document.querySelector("menuList");
+    menuList.style.maxHeight="0px";
+    function togglemenu(){
+        if( menuList.style.maxHeight=="0px"){
+            menuList.style.maxHeight="130px";
+        }
+        else
+        {
+            menuList.style.maxHeight="130px";
+        }
+    }
+</script>
 </html>
