@@ -13,26 +13,21 @@
 
 <body>
     <div class="navbar">
-        <div class="navbar-logo">
-            <a href="#">Uni-Cars</a>
-        </div>
-        <div class="navbar-list" id="menuList">
-            <a href="#">Accueil</a>
-            <a href="#">Infos Utiles</a>
-            <a href="#">Faq</a>
-            <a href="contactenous.html" target="_blank">Contactez nous</a>
-            <div class="popup" onclick="togglemenu()">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
-                    <g id="feBar0" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
-                        <g id="feBar1" fill="white">
-                            <path id="feBar2" d="M3 16h18v2H3v-2Zm0-5h18v2H3v-2Zm0-5h18v2H3V6Z" />
-                        </g>
-                    </g>
-                </svg>
+        <div class="navbar-part1">
+            <div class="navbar-logo">
+                <a href="#">Uni-Cars</a>
             </div>
         </div>
-        <div class="navbar-contact">
-            <a href="inscription.html" target="_blank">Connexion</a>
+        <div class="navbar-part2">
+            <div class="navbar-list">
+                <a href="#">Accueil</a>
+                <a href="#">Passagers</a>
+                <a href="#">Chauffeurs</a>
+                <a href="contactenous.html" target="_blank">Contactez nous</a>
+            </div>
+            <div class="navbar-contact">
+                <a href="inscription.html" target="_blank">Connexion</a>
+            </div>
         </div>
     </div>
     <div class="header">
@@ -186,17 +181,5 @@
         </div>
     </div>
 </body>
-<script>
-    const menuList=document.getElementById("menuList");
-    menuList.style.maxHeight="0px";
-    function togglemenu(){
-        if( menuList.style.maxHeight=="0px"){
-            menuList.style.maxHeight="130px";
-        }
-        else
-        {
-            menuList.style.maxHeight="0px";
-        }
-    }
-</script>
+
 </html>
