@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/welcome.css">
-    <link rel="stylesheet" href="assets/css/login.css">
-    <link rel="stylesheet" href="assets/css/inscription.css">
+    <!-- <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/inscription.css"> -->
     <script src="assets/js/script.js"></script>
     <title>PROJET-COVOITURAGE</title>
 </head>
@@ -21,15 +21,15 @@
             <a href="#">Infos Utiles</a>
             <a href="#">Faq</a>
             <a href="contactenous.html" target="_blank">Contactez nous</a>
-        </div>
-        <div class="popup" onclick="togglemenu()">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
-                <g id="feBar0" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
-                    <g id="feBar1" fill="white">
-                        <path id="feBar2" d="M3 16h18v2H3v-2Zm0-5h18v2H3v-2Zm0-5h18v2H3V6Z" />
+            <div class="popup" onclick="togglemenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                    <g id="feBar0" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+                        <g id="feBar1" fill="white">
+                            <path id="feBar2" d="M3 16h18v2H3v-2Zm0-5h18v2H3v-2Zm0-5h18v2H3V6Z" />
+                        </g>
                     </g>
-                </g>
-            </svg>
+                </svg>
+            </div>
         </div>
         <div class="navbar-contact">
             <a href="inscription.html" target="_blank">Connexion</a>
@@ -62,10 +62,10 @@
     <!--Il s agit ici de la partie regroupant les indications sur comment fonctionne le site-->
     <div class="feat">
         <div class="feat-title">
-            Comment ca marche?
+            Comment ça marche?
         </div>
         <div class="feat-s-title">
-            Deplacez vous facilement a moindre cout
+            Déplacez vous facilement à moindre côut
         </div>
         <div class="feat-container">
             <div class="feat-container-trajet">
@@ -188,17 +188,14 @@
 </body>
 <script>
     const menuList=document.getElementById("menuList");
-    const links=document.querySelectorAll("#menuList a");
     menuList.style.maxHeight="0px";
     function togglemenu(){
         if( menuList.style.maxHeight=="0px"){
             menuList.style.maxHeight="130px";
-            menuList.style.display="grid";
         }
         else
         {
             menuList.style.maxHeight="0px";
-            menuList.style.display="none";
         }
     }
 </script>
