@@ -22,7 +22,6 @@ body{
     color: #fff;
 }
 .navbar-logo {
-    width: 15%36;
     margin-left: 5%;
     text-align: center;
 }
@@ -33,8 +32,13 @@ body{
     display: flex;
 }
 .navbar-list {
-    width: 50%;
+    width: 53%;
+    border: 1px solid;
+    display: inline-flex;
     text-align: center;
+    margin-left: 12%;
+    position: relative;
+    bottom: 10px;
 }
 .navbar-list a {
     margin: 0 5%;
@@ -43,7 +47,7 @@ body{
 }
 .navbar-list a:hover{
     border-bottom: 1px solid #4DB7FE;
-}
+} 
 .popup svg {
     display: none;
 }
@@ -88,16 +92,18 @@ body{
     border-radius: 30px;
     display: flex;
     margin: 6% 20%;
-    padding: 1% 0;
+    /* padding: 1% 0; */
     background-color: #fff;
     box-shadow: 0px 0px 0px 10px rgba(255, 255, 255, 0.3);
     
 }
 .header-searchbar input{
-    width: 96%;
+    width: 100%;
     outline: none;
     border: none;
     text-align: center;
+    padding: 7% 0;
+    background-color: transparent;
 }
 .header-searchbar-adresse{
     width: 25%;
@@ -109,20 +115,27 @@ body{
     width: 25%;
 }
 .header-searchbar-submit {
-    width: 25%;
+    width: 27%;
+    transition: .2s;
+}
+.header-searchbar-submit:hover{
+    transform: scale(1.02);
 }
 .header-searchbar-submit input{
     border: none;
-    background-color: #fff;
+    background-color: #4DB7FE;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    color: #fff;
 }
 .feat{
-    margin-top: 10%;
+    padding-top: 10%;
 }
 .feat-title {
     margin: 0 35%;
     text-align: center;
     font-size: 34px;
-    color: #566985;
+    color: #4DB7FE;
     transition: .1s;
 }
 .feat-title:hover{
@@ -132,7 +145,7 @@ body{
     text-align: center;
     font-size: 13px;
     margin-top: 3%;
-    color: #7d93b2;
+    color: #4DB7FE;
 }
 .feat-container{
     display: flex;
@@ -140,7 +153,7 @@ body{
     font-size: 18px-;
 }
 .feat-container-trajet{
-    border: 1px solid #eee;
+    border: 1px solid #7d93b2;
     margin: 2%;
     padding: 1%;
     transition: .2s;
@@ -152,7 +165,7 @@ body{
     text-align: center;
 }
 .feat-container-reservation{
-    border: 1px solid #eee;
+    border: 1px solid #7d93b2;
     margin: 2%;
     padding: 1%;
     transition: .2s;
@@ -164,7 +177,7 @@ body{
     text-align: center;
 }
 .feat-container-services{
-    border: 1px solid #eee;
+    border: 1px solid #7d93b2;
     margin: 2%;
     padding: 1%;
     transition: .2s;
@@ -175,20 +188,24 @@ body{
 .feat-container-services-img {
     text-align: center;
 }
+.feat-container-reservation-img svg, .feat-container-trajet-img svg, .feat-container-services-img svg{
+    color: #566985;
+}
 .feat-container-reservation-title, .feat-container-trajet-title, .feat-container-services-title{
     margin: 10% 0;
     text-align: center;
     font-size: 18px;
-    color: #566985;
+    color: #4DB7FE;
 }
 .feat-container-reservation-lorem, .feat-container-trajet-lorem, .feat-container-services-lorem{
-    color: #999;
+    color: #4DB7FE;
     text-align: center;
     padding: 1% 7%;
     font-size: 13px;
 }
 .inscription{
     display: flex;
+    margin-bottom: -3%;
 }
 .inscription-part1{
     width: 50%;
@@ -209,8 +226,8 @@ body{
     text-decoration: none;
     font-size: 30px;
     font-weight: bold;
-    color: #fff;
-    border-bottom: 1px solid #fff;
+    color: #6257e3;
+        border-bottom: 1px solid #6257e3;
 }
 .inscription-part1-title:hover, .inscription-part2-title:hover{
     transform: scale(1.03);
@@ -219,7 +236,7 @@ body{
     width: 100%;
     position: relative;
     text-align: center;
-    color: #fff;
+    color: #6257e3;
     bottom: 50px;
     font-size: 20px;
     font-weight: bold;
@@ -270,28 +287,29 @@ body{
 }
 .contactUs-contact svg {
     position: relative;
-    top: 5px;
+    top: 7px;
 }
 .footer{
     background-color: #2C3B5A;
 }
 .footer-container{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2% 0;
 }
 .footer-part1 {
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: center;
     border-bottom: 1px solid #7d93b2;
     text-align: center;
-    padding-top: 6%;
+    padding-top: 2%;
 }
 .footer-part1 a{
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     padding: 2% 0;
     margin: 0 2%;
     color: #fff;
@@ -304,16 +322,23 @@ body{
 .footer-footer{
     display: flex;
     color: #fff;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin: 0 5%;
     padding: 1% 0;
 }
-.footer-img{
-    font-size: 20px;
+.footer-footer-part1{
+    width: 30%;
+    text-align: center;
 }
-.footer-footer-reserved{
-    font-size: 13px;
+.footer-img{
+    font-size: 30px;
+}
+.footer-footer-part2 {
+    width: 60%;
+    font-size: 11px;
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -329,23 +354,30 @@ body{
     .navbar{
         position: static;
     }
+    .navbar-logo {
+        margin-left: 40%;
+        text-align: center;
+    }
     .navbar-list {
         position: absolute;
         background-color: #7d93b2;
         display: grid;
         border-radius: 10px;
         top: 15%;
-        left: 50%;
     }
     .navbar-list a{
         border: none;
         margin-bottom: 4%;
     }
+    .popup {
+        position: absolute;
+        bottom: 8px;
+    }
     .popup svg {
         display: block;
         background-color: #4DB7FE;
         border-radius: 7px;
-    }
+    } 
     .header-presentation{
         font-size: 30px;
         margin-bottom: 8%;
@@ -373,12 +405,15 @@ body{
         background-color: #fff;
         padding: 2% 3%;
         border-radius: 10px;
+        width: 96%;
     }
     .header-searchbar-submit{
         width: 98%;
     }
     .header-searchbar-submit input{
         width: 100%;
+        color: black;
+        background-color: #4DB7FE;
     }
     .feat-container{
         flex-direction: column;
@@ -394,12 +429,23 @@ body{
     .inscription {
         width: 95%;
         flex-direction: column;
-
     }
     .inscription-part1, .inscription-part2{
         width: 71%;
         margin-left: 15%;
     }
+    .inscription-part1-title, .inscription-part2-title{
+        top: 70px;
+    }
+    .inscription-part1-title a, .inscription-part2-title a{
+        font-size: 18px;
+        color: #566985;
+        border-bottom: 1px solid #566985;
+    }
+    .inscription-part1-lorem, .inscription-part2-lorem{
+        font-size: 11px;
+        color: #566985;
+    }   
     .inscription-part1-img img, .inscription-part2-img img{
         margin: 0 2%;
     }
@@ -411,6 +457,9 @@ body{
     }
     .contactUs-presentation-firstPart {
         width: 100%;
+        text-align: center;
+    }
+    .contactUs-presentation-secondPart{
         text-align: center;
     }
     .contactUs-contact{
@@ -433,6 +482,7 @@ body{
     }
     .footer-footer-part2{
         font-size: 10px;
+        width: 96%;
     }
     .footer-footer-reserved1{
         margin-bottom: 2%;
