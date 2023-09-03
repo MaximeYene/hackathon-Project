@@ -1,6 +1,7 @@
 @import url(style.css);
 body{
     background-color: gainsboro;
+    margin: 0;
 }
 /* navbar */
 .navbar {
@@ -33,7 +34,6 @@ body{
 }
 .navbar-list {
   width: 53%;
-  border: 1px solid;
   display: inline-flex;
   text-align: center;
   margin-left: 12%;

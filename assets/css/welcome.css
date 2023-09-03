@@ -342,7 +342,7 @@ body{
     }
     .navbar{
         position: static;
-        flex-direction: column;
+        flex-wrap: wrap;
         padding: 0;
     }
     .navbar-part1{
@@ -351,9 +351,10 @@ body{
     }
     .navbar-part2 {
     width: 100%;
-    display: flex;
+    display:flex;
     justify-content: space-between;
     text-align: center;
+    padding: 10px;
     }
     .navbar-list {
         width: 75%;
@@ -490,13 +491,12 @@ body{
 @media screen and (max-width:480px){
     .navbar-part2{
         width: 100%;
-        flex-direction: column;
+        flex-wrap: wrap;
     }
     .navbar-list {
-        width: 100%;
-        display: inline;
+        display:flex;
         text-align: center;
-        margin-left: 0;
+        margin-left: 10px;
     }
     .navbar-contact {
         margin-left: 39%;
