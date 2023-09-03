@@ -1,14 +1,15 @@
+@import url(style.css);
 body{
 
 }
 .navbar {
     width: 100%;
     height: 15px;
-    position: fixed;
+    position: static;
     z-index: 1;
     display: flex;
     justify-content: space-between;
-    background-color: var(--blue-fist-color);
+    background-color: var(--blue-first-color);
     align-items: center;
     padding: 2% 0;
 }
@@ -72,7 +73,6 @@ text-align: center;
 font-size: 3.75rem;
 color:rgb(83, 83, 206);
 font-family: cursive;
-margin-top: -6px;
 }
 
 .formulairee{
@@ -99,9 +99,12 @@ margin-top: -6px;
 };
 
 
-.group-4 textarea{
+textarea{
     /* background-color: #e5e5e5; */
     margin-top: 10px;
+    width: 100%;
+}
+textarea#message-d70e {
     width: 100%;
 }
 .group-5 button{
@@ -112,6 +115,7 @@ background-color:rgb(83, 83, 206);
   letter-spacing: 2px;
   padding: 14px 22px;
   border-radius: 30px;
+  color: white;
     /* background-color: rgb(83, 83, 206);
     color: white;
     font-family: cursive;
@@ -128,78 +132,12 @@ margin: 34px;
     font-size: 30px;
 }
 
-.lien-de-contact{
-    background-color: #333333;
-    color: white;
-    font-size: 13px;
-}
-
-.service {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 50px;
-    margin-top: 10px;
-}
-
-.delivery-icone {
-    color: #ADD981;
-    font-size: 50px;
-}
-
-.service_item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.service-dedails {
-    font-weight: 600;
-    width: 150px;
-    text-align: center;
-}
-
-
-.icone-dereseau{
-    display: flex;
-}
-
-.icones{
-    width: 50px;
-    height: 50px;
-    margin-top: 66px;
-    color: rgba(245, 238, 238, 0.926);
-    border: 5px;
-
-}
-
-.enfin{
-    display: flex;
-    width: 100%;
-    height: 200px;
-    justify-content: center;
-    margin-left: 32px;
-    font-size: 30px;
-}
-
-
-
-
 @media screen and (max-width: 400px) {
     .group-1 .layout-1{
      margin-left: 0px;
      margin-right: 0px;
     }
-    .formulairee{
-     display: flex;
-     flex-direction: column;
-    }
-    .layout-1 .contact{
-        font-size: 24px;
-    }
-    .premierimage img {
-        width: 100%;
-    }
+   
   
 }
 
