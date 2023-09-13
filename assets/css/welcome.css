@@ -36,7 +36,7 @@ body{
 .navbar-list {
     width: 100%;
     display: inline-flex;
-    justify-content: space-around;
+    justify-content: end;
     text-align: center;
 }
 .navbar-list a {
@@ -65,9 +65,9 @@ body{
 }
 .header-presentation {
     width: 100%;
-    margin-top: 10%;
+    margin-top: 16%;
     text-align: center;
-    font-size: 50px;
+    font-size: 60px;
     color: #fff;
     font-weight: bold;
 }
@@ -75,48 +75,7 @@ body{
     margin-bottom: 2%;
 }
 .header-presentation-secondPart{
-    font-size: 30px;
-}
-.header-searchbar {
-    text-align: center;
-    border-radius: 30px;
-    display: flex;
-    margin: 6% 20%;
-    /* padding: 1% 0; */
-    background-color: #fff;
-    box-shadow: 0px 0px 0px 10px rgba(255, 255, 255, 0.3);
-    
-}
-.header-searchbar input{
-    width: 100%;
-    outline: none;
-    border: none;
-    text-align: center;
-    padding: 7% 0;
-    background-color: transparent;
-}
-.header-searchbar-adresse{
-    width: 25%;
-}
-.header-searchbar-destination{
-    width: 25%;
-}
-.header-searchbar-date {
-    width: 25%;
-}
-.header-searchbar-submit {
-    width: 27%;
-    transition: .2s;
-}
-.header-searchbar-submit:hover{
-    transform: scale(1.02);
-}
-.header-searchbar-submit input{
-    border: none;
-    background-color: #4DB7FE;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-    color: #fff;
+    font-size: 35px;
 }
 .feat{
     padding-top: 10%;
