@@ -65,7 +65,7 @@ body{
 }
 .header-presentation {
     width: 100%;
-    margin-top: 16%;
+    margin-top: 200px;
     text-align: center;
     font-size: 60px;
     color: #fff;
@@ -186,7 +186,7 @@ body{
     position: relative;
     text-align: center;
     color: #6257e3;
-    bottom: 50px;
+    bottom: 70px;
     font-size: 20px;
     font-weight: bold;
 }
@@ -258,7 +258,7 @@ body{
 
 
 
-@media screen and (max-width:852px) {
+@media screen and (max-width:1024px) {
     html, body{
         overflow-x: hidden;
     }
@@ -282,6 +282,7 @@ body{
         width: 100%;
         display: flex;
         text-align: center;
+        justify-content: space-around;
     }
     .navbar-logo {
         text-align: center;
@@ -292,42 +293,15 @@ body{
         padding: 2% 42%;
         box-shadow: 0px 0px 0px 6px rgba(255, 255, 255, 0.3);
     }
-    .header-presentation{
-        font-size: 16px;
-        margin-bottom: 8%;
+    .header{
+        height: 300px;
+    }
+    .header-presentation {
+        font-size: 22px;
+        margin-top: 90px;
     }
     .header-presentation-secondPart{
         font-size: 14px;
-    }
-    .header-searchbar {
-        flex-direction: column;
-        width: 82%;
-        margin: 2% 10%;
-        border-radius: 10px;
-        background-color: rgba(255, 255, 255, 0.3);
-    }
-    .header-searchbar-adresse, .header-searchbar-date, .header-searchbar-destination, .header-searchbar-submit {
-        width: 96%;
-        margin: 0 1%;
-        border: 1px solid #7d93b2;
-        border-radius: 10px;
-        margin: 1% 0;
-    }
-    .header-searchbar input {
-        border-bottom: #7d93b2;
-        text-align: left;
-        background-color: #fff;
-        padding: 2% 3%;
-        border-radius: 10px;
-        width: 96%;
-    }
-    .header-searchbar-submit{
-        width: 98%;
-    }
-    .header-searchbar-submit input{
-        width: 100%;
-        color: black;
-        background-color: #4DB7FE;
     }
     .feat-container{
         flex-direction: column;
@@ -409,25 +383,6 @@ body{
     }
     .footer-footer-reserved1{
         margin-bottom: 2%;
-    }
-}
-
-
-@media screen and (max-width:480px){
-    .navbar-part2 {
-        width: 100%;
-        justify-content: space-around;
-    }
-    .navbar-list {
-        display:flex;
-        text-align: center;
-        margin-left: 10px;
-    }
-    .navbar-contact {
-        margin-left: 39%;
-        margin-top: 4%;
-        width: max-content;
-        margin-bottom: 4%;
     }
 }
 
