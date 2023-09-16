@@ -64,8 +64,9 @@ const part=document.createElement("div");
     part.appendChild(numElement);
     part.appendChild(telephoneElement);
     part.appendChild(matriculeElement);
+
     };
-})
+});
 
 
 //Ajout de documents dans firestore
