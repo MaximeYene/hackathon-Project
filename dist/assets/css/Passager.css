@@ -121,11 +121,14 @@ input::placeholder {
     width: 50%;
 }
 .search div{
-    display: inline-flex;
+    display: block;
     border-bottom: 1px solid #2e4a96;
+    margin-left: 2%;
+    margin: 5% 0;
 }
-.search div p{
-    margin: 0 2%;
+.search div p {
+    margin: 3% 0%;
+    font-weight: 500;
 }
 .h3{
     align-items: center;

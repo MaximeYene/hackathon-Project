@@ -31,25 +31,25 @@ getDocs(conducteurs).then((snapshot) => {
 const part=document.createElement("div");
 
     const DateDepartElement = document.createElement("p");
-    DateDepartElement.innerText = article.DateDepart;
+    DateDepartElement.innerText = `Date de Depart du conducteur : ${article.DateDepart}`;
     const DateArrivieeElement = document.createElement("p");
-    DateArrivieeElement.innerText = article.DateArrivee;
+    DateArrivieeElement.innerText = `Date d arrivee du conducteur d'arrivee : ${article.DateArrivee}`;
     const HeureDepartElement = document.createElement("p");
-    HeureDepartElement.innerText = article.HeureDepart;
+    HeureDepartElement.innerText = `Heure de depart du conducteur : ${ article.HeureDepart}`;
     const HeureArriveeElement=document.createElement("p");
-    HeureArriveeElement.innerText=article.HeureArrivee;
+    HeureArriveeElement.innerText=` Heure d arrivee du conducteur : ${article.HeureArrivee}`;
     const LieuDepartElement=document.createElement("p");
-    LieuDepartElement.innerText=article.LieuDepart;
-    const LieuArriveeElement=document.createElement("p");
-    LieuArriveeElement.innerText=article.LieuArrivee;
+    LieuDepartElement.innerText=`Lieu de depart du conducteur : ${article.LieuDepart}`;
+    const LieuArriveeElement=document.createElement("p"); 
+    LieuArriveeElement.innerText=`Lieu d'arrivee du conducteur : ${article.LieuArrivee}`;
     const PrixPlaceElement=document.createElement("p");
-    PrixPlaceElement.innerText=article.PrixPlace;
+    PrixPlaceElement.innerText=`Prix d'une place : ${article.PrixPlace}`;
     const numElement=document.createElement("p");
-    numElement.innerText=article.numero;
+    numElement.innerText=`Nombre de places disponibles : ${article.numero}`;
     const telephoneElement=document.createElement("p");
-    telephoneElement.innerText=article.telephone;
+    telephoneElement.innerText=`Numero de telephone : ${article.telephone}` ;
     const matriculeElement = document.createElement("p");
-    matriculeElement.innerText=article.matricule;
+    matriculeElement.innerText= `Numero de telephone : ${article.matricule}` ;
 
     //Rattachement de nos balises au DOM
     const ElementRecherche = document.querySelector(".search");
@@ -88,7 +88,6 @@ if (addConductorForm) {
             numero: addConductorForm.num.value,
             telephone: addConductorForm.tel.value,
             matricule: addConductorForm.immatriculation.value,
-            dateAjout: serverTimestamp()
 
         }).then(() => addConductorForm.reset());
     })
