@@ -120,6 +120,13 @@ input::placeholder {
     border-bottom: 1px solid #2e4a96;
     width: 50%;
 }
+.search div{
+    display: inline-flex;
+    border-bottom: 1px solid #2e4a96;
+}
+.search div p{
+    margin: 0 2%;
+}
 .h3{
     align-items: center;
 }
