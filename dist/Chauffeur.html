@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/Passager.css">
-    <title>Passager</title>
+    <link rel="stylesheet" href="./assets/css/Chauffeur.css">
+    <script src="./bundle.js" defer></script>
+    <title>CHAUFFEUR</title>
 </head>
 
 <body>
@@ -17,7 +18,7 @@
         </div>
         <div class="navbar-part2">
             <div class="navbar-list">
-                <a href="#search">ACCUEIL</a>
+                <a href="index.html">ACCUEIL</a>
                 <a href="passagers .html">PASSAGERS</a>
                 <a href="Chauffeur.html">CONDUCTEURS</a>
             </div>
@@ -27,37 +28,60 @@
         </div>
     </div>
     <section class="container-form"><br><br><br><br><br>
-        <h1>EFFECTUER UNE RECHECHE DE COVOITURAGE</h1>
+        <h1>EFFECTUER UNE ANNONCE DE COVOITURAGE</h1>
         <h2>veuiller remplir le formulaire ci dessous</h2><br><br>
-        <section class="container">
+        <form class="mainForm">
             <div class="form-container">
                 <div class="form">
                     <div class="form-group">
                         <p>Date de Depart :</p>
-                        <input type="date"  id="Date-Depart"  name="Date-Depart" required  placeholder="01/09/2023">
+                        <input type="date"  id="Date-Depart" name="Date_Depart">
+                    </div>
+                    <div class="form-group">
+                        <p>Date d'arriver possible :</p>
+                        <input type="date" id="Date-arriver" name="Date_arriver">
                     </div>
                     <div class="form-group">
                         <p>Heures de Depart :</p>
-                        <input type="time" id="Heures-Depart" name="Heures-Depart"  required placeholder="00:00">
+                        <input type="time" id="Heure-Depart" name="Heure_Depart">
+                    </div>
+                    <div class="form-group">
+                        <p>Heure d'arriver Possible :</p>
+                        <input type="time" id="Heure-arriver" name="Heure_arriver"> 
                     </div>
                     <div class="form-group">
                         <p>Lieu de Depart :</p>
-                        <input type="text" id="Lieu-Depart" name="Lieu-Depart" required placeholder="Yaounde">
+                        <input type="text" id="Lieu-Depart" name="Lieu_Depart">
                     </div>
                     <div class="form-group">
                         <p>Lieu d'arriver :</p>
-                        <input type="text" id="Lieu-arriver" name="Lieu-arriver" required placeholder="DOUALA">
+                        <input type="text" id="Lieu-arriver" name="Lieu_arriver">
                     </div>
+                    <div class="form-group">
+                        <p>Prix Par Place :</p>
+                        <input type="text" id="Prix-Place" name="Prix_Place">
+                    </div>
+                    <div class="form-group">
+                        <p>Nombre de Place disponible :</p>
+                        <input type="number" id="num" name="num" >
+                    </div>
+                    <div class="form-group">
+                        <p>Mon Numero :</p>
+                        <input type="tel" id="tel" name="tel">
+                    </div>
+                    <div class="form-group">
+                        <p>Numero d'immatriculation :</p>
+                        <input type="text" id="immatriculation" name="immatriculation">
+                    </div>
+                    <!-- <div class="form-group">
+                        <p>Description :</p>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div> -->
+                    <button class="btn"> Plublier votre   Annonce</button>
                 </div>
-                <div class="sub-form">
-                    <button class="btn">Lancer votre recherche</button>
-                </div>
-            </div>
-            <div class="search">
-                <h3>resultat de votre recherche:</h3>
-            </div>
-        </section>
-    </section><br><br><br><br><br><br>
+            </div> 
+        </form>
+    </section><br><br><br><br><br>
     <div class="footer">
         <!-- <div class="footer-container">
             <div class="footer-part1">
