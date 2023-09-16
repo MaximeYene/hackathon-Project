@@ -38,8 +38,9 @@ body {
     justify-content: space-between;
 }
 .navbar-list {
-    width: 75%;
-    display: inline-block;
+    width: 100%;
+    display: inline-flex;
+    justify-content: end;
     text-align: center;
 }
 .navbar-list a {
@@ -49,16 +50,6 @@ body {
 }
 .navbar-list a:hover{
     border-bottom: 1px solid #4DB7FE;
-}
-.navbar-contact{
-    margin-right: 13%;
-}
-.navbar-contact a {
-    font-size: 13px;
-    border-radius: 30px;
-    background-color: #4DB7FE;
-    padding: 14% 57%;
-    box-shadow: 0px 0px 0px 6px rgba(255, 255, 255, 0.3);
 }
 
 p {
@@ -83,23 +74,23 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 50px;
-    width: 70%;
-    margin-left: 15%;
+    width: 40%;
+    margin-left: 32%;
     border-radius: 15px;
     padding: 20px;
 }
 
 .form {
     margin-left: 5%;
+    width: 92%;
 }
 
 .sub-form {
     margin-left: 2%;
 }
 
-input {
+input{
     border-radius: 3px;
-    padding-right: 300px;
     padding-top: 10px;
     padding-bottom: 10px;
     outline: none;
@@ -107,16 +98,8 @@ input {
     border-top: none;
     border-left: none;
     border-right: none;
+    width: 100%;
 }
-
-input[type="time"] {
-    padding-right: 400px;
-}
-
-input[type="date"] {
-    padding-right: 360px;
-}
-
 input::placeholder {
     font-size: 17px;
     padding-left: 5px;
@@ -146,19 +129,17 @@ textarea {
     resize: vertical;
     outline: none;
 }
-
-.footer {
+.footer{
     background-color: #2C3B5A;
+    padding: 4% 0;
 }
-
-.footer-container {
+/* .footer-container{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2% 0;
 }
-
 .footer-part1 {
     width: 100%;
     display: flex;
@@ -167,45 +148,41 @@ textarea {
     text-align: center;
     padding-top: 2%;
 }
-
-.footer-part1 a {
+.footer-part1 a{
     text-decoration: none;
     font-size: 18px;
     padding: 2% 0;
-    margin: 0 2%;
+    margin: 0 5%;
     color: #fff;
     font-weight: 700;
     transition: .2s;
 }
-
-.footer-part1 a:hover {
+.footer-part1 a:hover{
     color: #566985;
-}
-
+} */
 .footer-footer {
     display: flex;
     color: #fff;
     justify-content: center;
     align-items: center;
-    margin: 0 5%;
+    margin: 0 1%;
     padding: 1% 0;
+    border-top: 1px solid;
 }
-
 .footer-footer-part1 {
     width: 30%;
-    text-align: center;
+    text-align: initial;
 }
-
-.footer-img {
+.footer-img{
     font-size: 30px;
 }
-
 .footer-footer-part2 {
     width: 60%;
     font-size: 11px;
     display: flex;
     justify-content: space-between;
 }
+
 
 
 @media (max-width:700px) {
@@ -233,6 +210,11 @@ textarea {
         margin-left: 5%;
     }
 
+}
+@media (max-width:767px) {
+    .form-container {
+        margin-left: 25%;
+    }
     .btn {
         margin-left: 17%;
     }
@@ -314,12 +296,16 @@ textarea {
     }
 }
 
-@media screen and (max-width:480px){
+
+@media screen and (min-width:767px) and (max-width:1023) {
+    
+}
+/*@media screen and (max-width:767px){
     .navbar-part2{
         width: 100%;
         flex-wrap: wrap;
     }
-    .navbar-list {
+    .navbar-list{
         display:flex;
         text-align: center;
         margin-left: 10px;
@@ -330,4 +316,7 @@ textarea {
         width: max-content;
         margin-bottom: 4%;
     }
-}
+    .sub-form {
+        margin-left: 5%;
+    }
+}*/

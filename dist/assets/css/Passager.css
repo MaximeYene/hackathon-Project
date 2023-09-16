@@ -5,7 +5,6 @@ body {
     background-color: rgb(255, 255, 255);
     margin: 0;
 }
-
 .navbar {
     width: 100%;
     height: auto;
@@ -37,8 +36,9 @@ body {
     justify-content: space-between;
 }
 .navbar-list {
-    width: 75%;
-    display: inline-block;
+    width: 100%;
+    display: inline-flex;
+    justify-content: end;
     text-align: center;
 }
 .navbar-list a {
@@ -48,16 +48,6 @@ body {
 }
 .navbar-list a:hover{
     border-bottom: 1px solid #4DB7FE;
-}
-.navbar-contact{
-    margin-right: 13%;
-}
-.navbar-contact a {
-    font-size: 13px;
-    border-radius: 30px;
-    background-color: #4DB7FE;
-    padding: 14% 57%;
-    box-shadow: 0px 0px 0px 6px rgba(255, 255, 255, 0.3);
 }
 
 p {
@@ -77,16 +67,14 @@ h2 {
 
 .form-container {
     background-color: rgb(245, 245, 249);
-    display: flex;
-    flex-wrap: wrap;
     padding-bottom: 50px;
     width: 30%;
-    margin-left: 35%;
     border-radius: 10px;
 }
 
 .form {
     margin-left: 5%;
+    width: 90%;
 }
 
 .sub-form {
@@ -95,8 +83,7 @@ h2 {
 
 input {
     border-radius: 3px;
-    padding-right: 170%;
-
+    width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
     outline: none;
@@ -104,18 +91,6 @@ input {
     border-top: none;
     border-left: none;
     border-right: none;
-}
-
-input[type="time"] {
-    padding-right: 225%;
-}
-
-input[type="date"] {
-    padding-right: 195%;
-}
-
-input[type="date"]::-webkit-calendar-picker-indicator {
-    color: #666;
 }
 
 input::placeholder {
@@ -141,23 +116,39 @@ input::placeholder {
     padding: 15px;
     transition: 1s;
 }
-
-.footer {
-    background-color: #2C3B5A;
+.search{
+    border-bottom: 1px solid #2e4a96;
+    width: 50%;
 }
-
-.footer {
-    background-color: #2C3B5A;
+.search div{
+    display: block;
+    border-bottom: 1px solid #2e4a96;
+    margin-left: 2%;
+    margin: 5% 0;
 }
-
-.footer-container {
+.search div p {
+    margin: 3% 0%;
+    font-weight: 500;
+}
+.h3{
+    align-items: center;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.footer{
+    background-color: #2C3B5A;
+    padding: 4% 0;
+}
+/* .footer-container{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2% 0;
 }
-
 .footer-part1 {
     width: 100%;
     display: flex;
@@ -166,45 +157,41 @@ input::placeholder {
     text-align: center;
     padding-top: 2%;
 }
-
-.footer-part1 a {
+.footer-part1 a{
     text-decoration: none;
     font-size: 18px;
     padding: 2% 0;
-    margin: 0 2%;
+    margin: 0 5%;
     color: #fff;
     font-weight: 700;
     transition: .2s;
 }
-
-.footer-part1 a:hover {
+.footer-part1 a:hover{
     color: #566985;
-}
-
+} */
 .footer-footer {
     display: flex;
     color: #fff;
     justify-content: center;
     align-items: center;
-    margin: 0 5%;
+    margin: 0 1%;
     padding: 1% 0;
+    border-top: 1px solid;
 }
-
 .footer-footer-part1 {
     width: 30%;
-    text-align: center;
+    text-align: initial;
 }
-
-.footer-img {
+.footer-img{
     font-size: 30px;
 }
-
 .footer-footer-part2 {
     width: 60%;
     font-size: 11px;
     display: flex;
     justify-content: space-between;
 }
+
 
 @media (max-width:700px) {
     html, body{
@@ -214,10 +201,18 @@ input::placeholder {
     input {
         padding-right: 20%;
     }
+}
 
-    input[type="time"] {
-        padding-right: 70%;
+@media (max-width:767px) {
+
+    .form-container {
+        background-color: rgb(245, 245, 249);
+        padding-bottom: 50px;
+        width: 80%;
+        margin-left: 35%;
+        border-radius: 10px;
     }
+
 
     input[type="date"] {
         padding-right: 100px;
@@ -226,25 +221,35 @@ input::placeholder {
     input {
         padding-right: 70px; 
     }
+    .form {
 
-    .sub-form {
         margin-left: 5%;
+        width: 90%;
+    }
+    input {
+        border-radius: 3px;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        outline: none;
+        border-bottom: 1px solid #2e4a96;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+    
+    .form-container {
+        margin-left: 0%;
     }
 
     .btn {
-        margin-left: 25%;
+        margin-left: -15%;
     }
 
     textarea {
         width: 90%;
         height: 30px;
     }
-
-    .form-container {
-        width: 70%;
-        margin-left: 10%;
-    }
-
     h1 {
         text-align: center;
         font-size: 22px;
@@ -318,7 +323,7 @@ input::placeholder {
     }
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width:700px){
     .navbar-part2{
         width: 100%;
         flex-wrap: wrap;

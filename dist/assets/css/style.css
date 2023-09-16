@@ -1,6 +1,6 @@
 @font-face {
     font-family:poppins ;
-    src: url(/assets/fonts/Poppins-Regular.ttf);
+    src: url(../fonts/Poppins-Regular.ttf);
 }
 :root{
     --blue-first-color:#2F3B59;
