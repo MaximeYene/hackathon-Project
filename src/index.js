@@ -32,6 +32,7 @@ const addConductorForm=document.querySelector(".mainForm");
 if(addConductorForm){
     addConductorForm.addEventListener('submit',(e)=>{
         e.preventDefault();
+        
     
         //Ajouter un nouveau document avec un id genere
         addDoc(conducteurs,{
