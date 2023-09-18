@@ -63,8 +63,11 @@ function affichage(conducteurs) {
     const ElementRecherche = document.querySelector("#conducteur-content");
     ElementRecherche.innerHTML = ''
 
+    console.log( "bttn")
+
 
     for (let i = 0; i < conducteurs.length; i++) {
+        console.log("afficher")
         const article = conducteurs[i];
         const part = document.createElement("div");
         part.innerHTML = ""
@@ -108,14 +111,14 @@ function affichage(conducteurs) {
 function search(lieu_arriver, lieu_Depart) {
     if (conducteurs != []) {
         let searchTab = conducteurs.filter(conducteur => conducteur.LieuDepart.trim().toLowerCase().includes(lieu_Depart.trim().toLowerCase()) && conducteur.LieuArrivee.trim().toLowerCase().includes(lieu_arriver.trim().toLowerCase()))
-        console.log({ searchTab })
+        console.log({ searchTab }, "search")
         affichage(searchTab)
     }
 
 }
 
 function btnclick() {
-    console.log(conducteurs)
+    console.log(conducteurs, 'conduct')
     const lieu_arrive = document.getElementById('Lieu-arriver').value
     const lieu_Depart = document.getElementById('Lieu-Depart').value
     search(lieu_arrive, lieu_Depart )
