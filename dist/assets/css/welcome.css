@@ -1,4 +1,4 @@
-@import url(style.css);
+@import url(./style.css);
 body{
     overflow-x: hidden;
     margin: auto;
@@ -7,7 +7,7 @@ body{
     width: 100%;
     height: auto;
     position: fixed;
-    z-index: 1;
+    z-index: 5;
     display: flex;
     justify-content: space-between;
     background-color: var(--blue-first-color);
@@ -34,8 +34,9 @@ body{
     justify-content: space-between;
 }
 .navbar-list {
-    width: 75%;
-    display: inline-block;
+    width: 100%;
+    display: inline-flex;
+    justify-content: end;
     text-align: center;
 }
 .navbar-list a {
@@ -46,7 +47,7 @@ body{
 .navbar-list a:hover{
     border-bottom: 1px solid #4DB7FE;
 }
-.navbar-contact{
+/* .navbar-contact{
     margin-right: 13%;
 }
 .navbar-contact a {
@@ -55,18 +56,18 @@ body{
     background-color: #4DB7FE;
     padding: 14% 57%;
     box-shadow: 0px 0px 0px 6px rgba(255, 255, 255, 0.3);
-}
+} */
 .header{
     width: 100%;
     height: 605px;
     border: 1px solid transparent;
-    background-image: url(/assets/image/jad20210209-ass-cameroun-yaounde.avif);
+    background-image: url(../image/jad20210209-ass-cameroun-yaounde.avif);
 }
 .header-presentation {
     width: 100%;
-    margin-top: 10%;
+    margin-top: 200px;
     text-align: center;
-    font-size: 50px;
+    font-size: 60px;
     color: #fff;
     font-weight: bold;
 }
@@ -74,48 +75,7 @@ body{
     margin-bottom: 2%;
 }
 .header-presentation-secondPart{
-    font-size: 30px;
-}
-.header-searchbar {
-    text-align: center;
-    border-radius: 30px;
-    display: flex;
-    margin: 6% 20%;
-    /* padding: 1% 0; */
-    background-color: #fff;
-    box-shadow: 0px 0px 0px 10px rgba(255, 255, 255, 0.3);
-    
-}
-.header-searchbar input{
-    width: 100%;
-    outline: none;
-    border: none;
-    text-align: center;
-    padding: 7% 0;
-    background-color: transparent;
-}
-.header-searchbar-adresse{
-    width: 25%;
-}
-.header-searchbar-destination{
-    width: 25%;
-}
-.header-searchbar-date {
-    width: 25%;
-}
-.header-searchbar-submit {
-    width: 27%;
-    transition: .2s;
-}
-.header-searchbar-submit:hover{
-    transform: scale(1.02);
-}
-.header-searchbar-submit input{
-    border: none;
-    background-color: #4DB7FE;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-    color: #fff;
+    font-size: 35px;
 }
 .feat{
     padding-top: 10%;
@@ -206,6 +166,7 @@ body{
 }
 .inscription-part1-title, .inscription-part2-title{
     position: relative;
+    z-index: 2;
     width: 100%;
     top: 80px;
     text-align: center;
@@ -226,62 +187,25 @@ body{
     position: relative;
     text-align: center;
     color: #6257e3;
-    bottom: 50px;
+    bottom: 70px;
     font-size: 20px;
     font-weight: bold;
 }
 .inscription-part1-img img{
     width: 100%;
     height: auto;
+    filter: brightness(0.6);
 }
 .inscription-part2-img img{
     width: 100%;
     height: auto;
-}
-.contactUs {
-    display: flex;
-    justify-content: space-around;
-    padding: 10%;
-    background-color: #4DB7FE;
-}
-.contactUs-presentation-firstPart{
-    float: left;
-    width: 100%;
-    text-align: left;
-    font-size: 34px;
-    font-weight: 700;
-    padding-bottom: 20px;
-    color: #fff;
-}
-.contactUs-presentation-secondPart{
-    text-align: left;
-    color: rgba(255,255,255,0.51);
-    font-size: 13px;
-}
-.contactUs-contact {
-    width: max-content;
-    padding: 1% 3%;
-    background: #fff;
-    height: max-content;
-    box-shadow: 0px 0px 0px 7px rgba(255,255,255,0.4);
-    border-radius: 30px;
-    transition: .3s;
-}
-.contactUs-contact:hover{
-    transform: scale(1.03);
-}
-.contactUs-contact a{
-    text-decoration: none;
-    font-size: 18px;
-}
-.contactUs-contact svg {
-    position: relative;
-    top: 7px;
+    filter: brightness(0.6);
 }
 .footer{
     background-color: #2C3B5A;
+    padding: 4% 0;
 }
-.footer-container{
+/* .footer-container{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -300,25 +224,26 @@ body{
     text-decoration: none;
     font-size: 18px;
     padding: 2% 0;
-    margin: 0 2%;
+    margin: 0 5%;
     color: #fff;
     font-weight: 700;
     transition: .2s;
 }
 .footer-part1 a:hover{
     color: #566985;
-}
-.footer-footer{
+} */
+.footer-footer {
     display: flex;
     color: #fff;
     justify-content: center;
     align-items: center;
-    margin: 0 5%;
+    margin: 0 1%;
     padding: 1% 0;
+    border-top: 1px solid;
 }
-.footer-footer-part1{
+.footer-footer-part1 {
     width: 30%;
-    text-align: center;
+    text-align: initial;
 }
 .footer-img{
     font-size: 30px;
@@ -336,7 +261,7 @@ body{
 
 
 
-@media screen and (max-width:852px) {
+@media screen and (max-width:1024px) {
     html, body{
         overflow-x: hidden;
     }
@@ -357,55 +282,29 @@ body{
     padding: 10px;
     }
     .navbar-list {
-        width: 75%;
-        display: inline-block;
+        width: 100%;
+        display: flex;
         text-align: center;
-        margin-left: 0;
+        justify-content: space-around;
     }
     .navbar-logo {
         text-align: center;
+        margin-left: 0;
     }
     .navbar-contact a {
         font-size: 10px;
         padding: 2% 42%;
         box-shadow: 0px 0px 0px 6px rgba(255, 255, 255, 0.3);
     }
-    .header-presentation{
-        font-size: 16px;
-        margin-bottom: 8%;
+    .header{
+        height: 300px;
+    }
+    .header-presentation {
+        font-size: 22px;
+        margin-top: 90px;
     }
     .header-presentation-secondPart{
         font-size: 14px;
-    }
-    .header-searchbar {
-        flex-direction: column;
-        width: 82%;
-        margin: 2% 10%;
-        border-radius: 10px;
-        background-color: rgba(255, 255, 255, 0.3);
-    }
-    .header-searchbar-adresse, .header-searchbar-date, .header-searchbar-destination, .header-searchbar-submit {
-        width: 96%;
-        margin: 0 1%;
-        border: 1px solid #7d93b2;
-        border-radius: 10px;
-        margin: 1% 0;
-    }
-    .header-searchbar input {
-        border-bottom: #7d93b2;
-        text-align: left;
-        background-color: #fff;
-        padding: 2% 3%;
-        border-radius: 10px;
-        width: 96%;
-    }
-    .header-searchbar-submit{
-        width: 98%;
-    }
-    .header-searchbar-submit input{
-        width: 100%;
-        color: black;
-        background-color: #4DB7FE;
     }
     .feat-container{
         flex-direction: column;
@@ -430,33 +329,16 @@ body{
         top: 70px;
     }
     .inscription-part1-title a, .inscription-part2-title a{
-        font-size: 12px;
+        font-size: 18px;
         color: #566985;
         border-bottom: 1px solid #566985;
     }
     .inscription-part1-lorem, .inscription-part2-lorem{
-        font-size: 10px;
+        font-size: 13px;
         color: #566985;
     }   
     .inscription-part1-img img, .inscription-part2-img img{
         margin: 0 2%;
-    }
-    .contactUs{
-        flex-direction: column;
-    }
-    .contactUs-presentation{
-        margin-bottom: 10%;
-    }
-    .contactUs-presentation-firstPart {
-        width: 100%;
-        text-align: center;
-    }
-    .contactUs-presentation-secondPart{
-        text-align: center;
-    }
-    .contactUs-contact{
-        margin: auto;
-        padding-bottom: 2%;
     }
     .footer-part1{
         width: 100%;
@@ -464,11 +346,14 @@ body{
     }
     .footer-part1 a{
        margin-bottom: 1%;
-    }.footer-footer{
-        flex-direction: column;
     }
-    .footer-img{
+    .footer-footer {
+        flex-direction: column;
+        border: none;
+    }
+    .footer-img {
         margin-bottom: 2%;
+        border-bottom: 1px solid;
     }
     .footer-part1 a{
         font-size: 14px;
@@ -484,25 +369,6 @@ body{
     }
     .footer-footer-reserved1{
         margin-bottom: 2%;
-    }
-}
-
-
-@media screen and (max-width:480px){
-    .navbar-part2{
-        width: 100%;
-        flex-wrap: wrap;
-    }
-    .navbar-list {
-        display:flex;
-        text-align: center;
-        margin-left: 10px;
-    }
-    .navbar-contact {
-        margin-left: 39%;
-        margin-top: 4%;
-        width: max-content;
-        margin-bottom: 4%;
     }
 }
 

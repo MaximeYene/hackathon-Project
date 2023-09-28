@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/welcome.css">
+    <link rel="stylesheet" href="./assets/css/welcome.css">
     <!-- <link rel="stylesheet" href="assets/css/login.css">
     <link rel="stylesheet" href="assets/css/inscription.css"> -->
-    <script src="assets/js/script.js"></script>
+    <script defer src="./bundle.js"></script>
     <title>PROJET-COVOITURAGE</title>
 </head>
 
@@ -15,22 +15,21 @@
     <div class="navbar">
         <div class="navbar-part1">
             <div class="navbar-logo">
-                <a href="#">Uni-Cars</a>
+                <a href="#">UNI-CARS</a>
             </div>
         </div>
         <div class="navbar-part2">
             <div class="navbar-list">
-                <a href="index.html">Accueil</a>
-                <a href="passagers .html">Passagers</a>
-                <a href="Chauffeur.html">Chauffeurs</a>
-                <a href="contactenous.html" target="_blank">Contacte</a>
+                <a href="index.html">ACCUEIL</a>
+                <a href="passagers .html">PASSAGERS</a>
+                <a href="Chauffeur.html">CONDUCTEURS</a>
             </div>
-            <div class="navbar-contact">
-                <a href="inscription.html" target="_blank">Connexion</a>
-            </div>
+            <!-- <div class="navbar-contact">
+                <a href="inscription.html">Connexion</a>
+            </div> -->
         </div>
     </div>
-    <div class="header">
+    <div class="header" id="search">
         <div class="header-presentation">
             <div class="header-presentation-firstPart">
                 Covoiturage Pour Tous
@@ -39,12 +38,12 @@
                 Un Vaste Choix De Trajets A Petit Prix
             </div>
         </div>
-        <div class="header-searchbar">
+        <!-- <div class="header-searchbar">
             <div class="header-searchbar-adresse">
-                <input type="text" name="adresse" placeholder="ville ou une adresse">
+                <input type="text" name="adresse" placeholder="ville de depart">
             </div>
             <div class="header-searchbar-destination">
-                <input type="text" name="destination" placeholder="Lieu de destination">
+                <input type="text" name="destination" placeholder="ville de destination">
             </div>
             <div class="header-searchbar-date">
                 <input type="date" name="date">
@@ -52,7 +51,7 @@
             <div class="header-searchbar-submit">
                 <input type="submit" name="submit" placeholder="Rechercher">
             </div>
-        </div>
+        </div> -->
     </div>
     <!--Il s agit ici de la partie regroupant les indications sur comment fonctionne le site-->
     <div class="feat">
@@ -74,7 +73,7 @@
                     Trouvez un trajet
                 </div>
                 <div class="feat-container-trajet-lorem">
-                    Trouvez tous les trajets disponibles à partir de l'outil de recherche sur le site. Indiquez
+                    Trouvez tous les trajets disponibles à partir de l'outil de recherche dans la page Passagers. Indiquez
                     simplement votre destination ou le lieu de départ ou une date de départ. Choisissez ensuite le
                     trajet qui vous convient.
                 </div>
@@ -106,7 +105,7 @@
                     Profitez du service
                 </div>
                 <div class="feat-container-services-lorem">
-                    Une fois votre réservation payée, rendez vous simplement le jour du voyage au point d'embarquement
+                    Une fois votre réservation faite, rendez vous simplement le jour du voyage au point d'embarquement
                     indiqué et profitez de votre voyage. Le respect des conditions de voyage fixées par le conducteur
                     est obligatoire.
                 </div>
@@ -117,7 +116,7 @@
     <div class="inscription">
         <div class="inscription-part1">
             <div class="inscription-part1-title">
-                <a href="#">Conduisez avec Uni-Cars</a>
+                <a href="Chauffeur.html">Conduisez avec Uni-Cars</a>
             </div>
             <div class="inscription-part1-img">
                 <img src="assets/image/pexels-photo-3787149-640w.webp" alt="image d illustration">
@@ -128,7 +127,7 @@
         </div>
         <div class="inscription-part2">
             <div class="inscription-part2-title">
-                <a href="#"> Trouvez un itineraire pour voyager</a>
+                <a href="passagers .html"> Trouvez un itineraire pour voyager</a>
             </div>
             <div class="inscription-part2-img">
                 <img src="assets/image/2ec7d0c6aa8f91e4074086b3e20534a7_XL.jpg" alt="image d illustration">
@@ -138,32 +137,13 @@
             </div>
         </div>
     </div>
-    <!--Dans cette partie nous aurons la rubrique "Contactz nous"-->
-    <div class="contactUs">
-        <div class="contactUs-presentation">
-            <div class="contactUs-presentation-firstPart">
-                Vous avez des questions?
-            </div>
-            <div class="contactUs-presentation-secondPart">
-                Laissez nous votre message et notre équipe vous contactera.
-            </div>
-        </div>
-        <div class="contactUs-contact">
-            <a href="#">Contactez nous</a>
-            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
-                <path fill="currentColor"
-                    d="M3 4C1.344 4 0 5.344 0 7v12c0 1.656 1.344 3 3 3h20c1.656 0 3-1.344 3-3V7c0-1.656-1.344-3-3-3H3zm0 2h20c.551 0 1 .449 1 1v.5l-11 5.938L2 7.5V7c0-.551.449-1 1-1zM2 7.781l6.531 5.094l-6.406 6.563l7.813-5.563L13 15.844l3.063-1.969l7.812 5.563l-6.406-6.563L24 7.781V19a.95.95 0 0 1-.125.438c-.165.325-.486.562-.875.562H3c-.389 0-.71-.237-.875-.563A.95.95 0 0 1 2 19V7.781z" />
-            </svg>
-        </div>
-    </div>
     <div class="footer">
-        <div class="footer-container">
+        <!-- <div class="footer-container">
             <div class="footer-part1">
                 <a href="#">Passager</a>
                 <a href="#">Conducteur</a>
-                <a href="#">Besoin d assistance</a>
             </div>
-        </div>
+        </div> -->
         <div class="footer-footer">
             <div class="footer-footer-part1">
                 <div class="footer-img">

@@ -4,95 +4,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/Chauffeur.css">
+    <link rel="stylesheet" href="./assets/css/Chauffeur.css">
+    <script src="./bundle.js" defer></script>
     <title>CHAUFFEUR</title>
-    <script src="/asset/js/app.js"></script>
 </head>
 
 <body>
     <div class="navbar">
         <div class="navbar-part1">
             <div class="navbar-logo">
-                <a href="#">Uni-Cars</a>
+                <a href="#">UNI-CARS</a>
             </div>
         </div>
         <div class="navbar-part2">
             <div class="navbar-list">
-                <a href="index.html">Accueil</a>
-                <a href="passagers .html">Passagers</a>
-                <a href="Chauffeur.html">Chauffeurs</a>
-                <a href="contactenous.html" target="_blank">Contacte</a>
+                <a href="index.html">ACCUEIL</a>
+                <a href="passagers .html">PASSAGERS</a>
+                <a href="Chauffeur.html">CONDUCTEURS</a>
             </div>
-            <div class="navbar-contact">
-                <a href="inscription.html" target="_blank">Connexion</a>
-            </div>
+            <!-- <div class="navbar-contact">
+                <a href="inscription.html">Connexion</a>
+            </div> -->
         </div>
     </div>
     <section class="container-form"><br><br><br><br><br>
         <h1>EFFECTUER UNE ANNONCE DE COVOITURAGE</h1>
         <h2>veuiller remplir le formulaire ci dessous</h2><br><br>
-        <form>
+        <form class="mainForm">
             <div class="form-container">
                 <div class="form">
                     <div class="form-group">
                         <p>Date de Depart :</p>
-                        <input type="date"  id="Date-Depart" name="Date-Depart" required  placeholder="01/09/2023">
+                        <input type="date"  id="Date-Depart" name="Date_Depart" required>
                     </div>
                     <div class="form-group">
                         <p>Date d'arriver possible :</p>
-                        <input type="date" id="Date-arriver" name="Date-arriver" required placeholder="01/09/2023">
+                        <input type="date" id="Date-arriver" name="Date_arriver" required>
                     </div>
                     <div class="form-group">
                         <p>Heures de Depart :</p>
-                        <input type="time" id="Heures-Depart"  required placeholder="00:00">
+                        <input type="time" id="Heure-Depart" name="Heure_Depart" required>
                     </div>
                     <div class="form-group">
                         <p>Heure d'arriver Possible :</p>
-                        <input type="time" id="Heure-arriver" required placeholder="00:00"> 
+                        <input type="time" id="Heure-arriver" name="Heure_arriver" required> 
                     </div>
                     <div class="form-group">
                         <p>Lieu de Depart :</p>
-                        <input type="text" id="Lieu-Depart" name="Lieu-Depart" required placeholder="Yaounde">
+                        <input type="text" id="Lieu-Depart" name="Lieu_Depart" required>
                     </div>
                     <div class="form-group">
                         <p>Lieu d'arriver :</p>
-                        <input type="text" id="Lieu-arriver" name="Lieu-arriver" required placeholder="DOUALA">
+                        <input type="text" id="Lieu-arriver" name="Lieu_arriver" required>
                     </div>
                     <div class="form-group">
                         <p>Prix Par Place :</p>
-                        <input type="text" id="Prix-Place" name="Prix-Place" required placeholder="1Fcfa">
+                        <input type="text" id="Prix-Place" name="Prix_Place" required>
                     </div>
-                </div>
-                <div class="sub-form">
                     <div class="form-group">
                         <p>Nombre de Place disponible :</p>
-                        <input type="number" id="num" name="num" required>
+                        <input type="number" id="num" name="num" required >
                     </div>
                     <div class="form-group">
                         <p>Mon Numero :</p>
-                        <input type="tel" id="tel" name="tel" required placeholder="+237 697 52 52 52">
+                        <input type="tel" id="tel" name="tel" required>
                     </div>
                     <div class="form-group">
                         <p>Numero d'immatriculation :</p>
-                        <input type="text" id="immatriculation" name="immatriculation" required placeholder="000000">
+                        <input type="text" id="immatriculation" name="immatriculation" required>
                     </div>
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                         <p>Description :</p>
                         <textarea name="" id="" cols="30" rows="10"></textarea>
-                    </div>
+                    </div> -->
                     <button class="btn"> Plublier votre   Annonce</button>
                 </div>
             </div> 
         </form>
     </section><br><br><br><br><br>
     <div class="footer">
-        <div class="footer-container">
+        <!-- <div class="footer-container">
             <div class="footer-part1">
                 <a href="#">Passager</a>
                 <a href="#">Conducteur</a>
-                <a href="#">Besoin d assistance</a>
             </div>
-        </div>
+        </div> -->
         <div class="footer-footer">
             <div class="footer-footer-part1">
                 <div class="footer-img">
