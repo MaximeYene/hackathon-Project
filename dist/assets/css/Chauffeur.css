@@ -184,7 +184,9 @@ textarea {
 }
 
 
-<<<<<<< HEAD:assets/css/Chauffeur.css
+
+
+
 @media (max-width:700px) {
     html, body{
         overflow-x: hidden;
@@ -209,13 +211,14 @@ textarea {
     .sub-form {
         margin-left: 5%;
     }
+}
 
-=======
+
 @media (max-width:767px) {
     .form-container {
         margin-left: 25%;
     }
->>>>>>> develop:dist/assets/css/Chauffeur.css
+
     .btn {
         margin-left: 17%;
     }
@@ -298,26 +301,3 @@ textarea {
 }
 
 
-@media screen and (min-width:767px) and (max-width:1023) {
-    
-}
-/*@media screen and (max-width:767px){
-    .navbar-part2{
-        width: 100%;
-        flex-wrap: wrap;
-    }
-    .navbar-list{
-        display:flex;
-        text-align: center;
-        margin-left: 10px;
-    }
-    .navbar-contact {
-        margin-left: 39%;
-        margin-top: 4%;
-        width: max-content;
-        margin-bottom: 4%;
-    }
-    .sub-form {
-        margin-left: 5%;
-    }
-}*/
